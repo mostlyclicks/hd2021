@@ -24,11 +24,6 @@ const Hero4 = () => {
               xl:w-3/12
               " 
               style={{backgroundColor:"#6171A6"}}
-              
-              data-sal="slide-up"
-              data-sal-delay="300"
-              data-sal-easing="ease"
-              
               >
               <div className="items-center">
                 <div className="w-full md:w-12/12 lg:w-10/12 xs:p-8 lg:px-4 ml-auto mr-auto text-left ">
