@@ -20,7 +20,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Navbar transparent/>
     <Hero />
-    <FullScreenSection
+    {/* <FullScreenSection
       bgImage={SectionOneImage}
       layoutType="centerBottom"
     >
@@ -34,7 +34,7 @@ const IndexPage = () => (
     >
       SECTION 2 - Hulse Dental is Onalaska’s choice for dental care, providing state-of-the-art family dentistry and cosmetic dentistry services by Dentist Kurt Hulse.
 
-    </FullScreenSection>
+    </FullScreenSection> */}
       
     
     
