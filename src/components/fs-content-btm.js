@@ -1,7 +1,7 @@
 import React from 'react'
-import HeroImage from "../images/DSC0090.jpg"
+// import HeroImage from "../images/DSC0090.jpg"
 
-const Hero2 = () => {
+const FsContentBottom = ({children, heroImage}) => {
 
     return (
         <div className="relative pt-16 flex content-bottom items-end justify-center bg-black"
@@ -11,7 +11,7 @@ const Hero2 = () => {
           <div className="absolute top-0 w-full h-full bg-center bg-cover bg-black"
               style={{
                 backgroundColor:"#000000",
-                backgroundImage: `url(${HeroImage})`
+                backgroundImage: `url(${heroImage})`
               }}>
             
           </div>
@@ -24,7 +24,7 @@ const Hero2 = () => {
                   <div>
                     
                     <p className=" text-3xl lg:text-4xl text-white leading-10 font-extralight">
-                    Hulse Dental is Onalaska’s choice for dental care, providing state-of-the-art family dentistry and cosmetic dentistry services by Dentist Kurt Hulse.
+                    {children}
                     </p>
                   </div>
                 </div>
@@ -41,4 +41,4 @@ const Hero2 = () => {
     )
 }
 
-export default Hero2
+export default FsContentBottom

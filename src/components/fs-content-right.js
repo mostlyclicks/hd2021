@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroImage from "../images/DSC0126.jpg"
+// import HeroImage from "../images/DSC0126.jpg"
 
 
-const Hero3 = () => {
+const FsContentRight = ({children, heroImage}) => {
 
     return (
         <div className="relative flex items-stretch justify-start"
@@ -11,7 +11,7 @@ const Hero3 = () => {
             }}>
           <div className="absolute top-0 w-full h-full bg-left sm:bg-center bg-cover"
               style={{
-                backgroundImage: `url(${HeroImage})`
+                backgroundImage: `url(${heroImage})`
               }}>
             
           </div>
@@ -29,10 +29,8 @@ const Hero3 = () => {
                 <div className="w-full md:w-12/12 lg:w-10/12 xs:p-8 lg:px-4 ml-auto mr-auto text-left ">
                   <div>
                     
-                    <p className=" text-3xl text- leading-10 font-extralight"
-
-                    >
-                    We are glad you are taking the time to learn more about us and our dental care and services. Our goal is to make sure that you’re comfortable and receive the best care possible throughout your dental visit. We offer pleasant surroundings with state-of-the-art technology along with other amenities to provide a relaxed yet professional family dental environment to improve and maintain your oral health. From the moment you enter our dental office, you are treated with courtesy and respect in a warm, friendly setting where your comfort is a top priority. We are fortunate to be easily accessible from the Onalaska, La Crosse, Holmen, West Salem and other coulee region areas.
+                    <p className=" text-3xl text- leading-10 font-extralight">
+                      {children}
                     </p>
                   </div>
                 </div>
@@ -49,4 +47,4 @@ const Hero3 = () => {
     )
 }
 
-export default Hero3
+export default FsContentRight

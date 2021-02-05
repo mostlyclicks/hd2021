@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroImage from "../images/DSC-0260.jpg"
+// import HeroImage from "../images/DSC-0260.jpg"
 
 
-const Section5 = () => {
+const ContainerCenterContent = ({children, heroImage}) => {
 
     return (
         <div 
@@ -17,15 +17,15 @@ const Section5 = () => {
           "
         >
             <div>
-              <img src={HeroImage} alt="Dr. Kurt Hulse" />
+              <img src={heroImage} alt="Dr. Kurt Hulse" />
             </div>
             <div className="text-center">
               <p className="
                 text-3xl font-extralight text-center py-10 text-opacity-70
                 lg:w-8/12 lg:mx-auto
               ">
-                Hulse Dental’s expertise and state-of-the-art technologies allows us to offer preventative, restorative and orthodontic services all in-house.</p>
-
+                {children}
+              </p>
               <button className="bg-gray-500 text-white py-4 px-8 text-2xl font-light">
                 Learn More
               </button>
@@ -35,4 +35,4 @@ const Section5 = () => {
     )
 }
 
-export default Section5
+export default ContainerCenterContent

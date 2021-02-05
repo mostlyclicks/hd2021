@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroImage from "../images/DSC0095.jpg"
+// import HeroImage from "../images/DSC0095.jpg"
 
 
-const Hero4 = () => {
+const FsContentLeft = ({children, heroImage}) => {
 
     return (
         <div className="relative flex items-stretch justify-start"
@@ -11,7 +11,7 @@ const Hero4 = () => {
             }}>
           <div className="absolute top-0 w-full h-full bg-left sm:bg-center bg-cover"
               style={{
-                backgroundImage: `url(${HeroImage})`
+                backgroundImage: `url(${heroImage})`
               }}>
             
           </div>
@@ -30,7 +30,7 @@ const Hero4 = () => {
                   <div>
                     
                     <p className=" text-3xl leading-10 font-extralight">
-                    Whether you come to our office for a routine check-up, cleaning & dental care, restorative dentistry, dental implants, teeth whitening, cosmetic dentistry, or any other specialty service, we all are focused on providing you with a visit to the dentist that is smooth and pleasant, and that your dental care is designed specifically to meet your unique needs and goals. Our team of professionals is proud of the care they provide and the exceptional service they deliver to our patients and community.
+                      {children}
                     </p>
                   </div>
                 </div>
@@ -47,4 +47,4 @@ const Hero4 = () => {
     )
 }
 
-export default Hero4
+export default FsContentLeft
