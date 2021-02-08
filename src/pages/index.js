@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Navbar from "../components/navbar"
 import Hero from "../components/hero"
+import ContentTextPict from "../components/content-text-pict.js"
 
 import FullScreenSection from "../components/fullscreen-section"
 import SectionOneImage from "../images/DSC0090.jpg"
@@ -47,6 +48,8 @@ const IndexPage = () => (
     >
       Hulse Dental’s expertise and state-of-the-art technologies allows us to offer preventative, restorative and orthodontic services all in-house.
     </FullScreenSection>
+
+    <ContentTextPict />
 
 
     

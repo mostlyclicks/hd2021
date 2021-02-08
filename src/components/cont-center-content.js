@@ -16,22 +16,22 @@ const ContainerCenterContent = ({children, heroImage}) => {
           md:py-32
           "
         >
-            <div>
-              <img src={heroImage} alt="Dr. Kurt Hulse" />
-            </div>
-            <div className="text-center">
-              <p className="
-                text-3xl font-extralight text-center py-10 text-opacity-70
-                lg:w-8/12 lg:mx-auto
-              ">
-                {children}
-              </p>
-              <button className="bg-gray-500 text-white py-4 px-8 text-2xl font-light">
-                Learn More
-              </button>
-            </div>
+          <div>
+            <img src={heroImage} alt="Dr. Kurt Hulse" />
+          </div>
+          <div className="text-center">
+            <p className="
+              text-3xl font-extralight text-center py-10 text-opacity-70
+              lg:w-8/12 lg:mx-auto
+            ">
+              {children}
+            </p>
+            <button className="bg-gray-500 text-white py-4 px-8 text-2xl font-light">
+              Learn More
+            </button>
           </div>
         </div>
+      </div>
     )
 }
 
