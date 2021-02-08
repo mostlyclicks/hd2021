@@ -1,0 +1,3 @@
+.p-light {
+    @apply text-2xl text-white text-opacity-80 font-light
+}

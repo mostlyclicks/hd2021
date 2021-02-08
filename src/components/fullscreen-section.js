@@ -1,25 +1,40 @@
 import React from 'react'
+import FsContentBottom from "./fs-content-btm"
+import FsContentRight from "./fs-content-right"
+import FsContentLeft from "./fs-content-left"
+import ContainerCenterContent from "./cont-center-content"
+// import FSCenterBottom from "../components/section-layouts/section-center-bottom"
+// import SectionRight
 
 const FullScreenSection = ({children, bgImage, layoutType}) => {
 
-    if (layoutType === 'centerBottom') {
+    if (layoutType === 'fs-centerBottom') {
 
         return(
-            <>
-                {children}
-                <em>{layoutType}</em>
-                <img src={bgImage} />
-                
-            </>
+            <FsContentBottom heroImage={bgImage}>
+                {children}                
+            </FsContentBottom>
         )
-    } else if (layoutType == 'right') {
+    } else if (layoutType == 'fs-right') {
         
         return (
-            <>
+            <FsContentRight heroImage={bgImage}>
                 {children}
-                <h1>{layoutType}</h1>
-                <img src={bgImage} />
-            </>
+            </FsContentRight>
+        )
+    } else if (layoutType == 'fs-left' ) {
+
+        return (
+            <FsContentLeft heroImage={bgImage}>
+                {children}
+            </FsContentLeft>
+        )
+    } else if (layoutType == 'container-center-content' ) {
+
+        return (
+            <ContainerCenterContent heroImage={bgImage}>
+                {children}
+            </ContainerCenterContent>
         )
     }
     
