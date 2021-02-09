@@ -1,6 +1,4 @@
 import React from 'react'
-// import HeroImage from "../images/DSC0095.jpg"
-
 
 const FsContentLeft = ({children, heroImage}) => {
 

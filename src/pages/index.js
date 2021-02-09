@@ -11,6 +11,7 @@ import SectionOneImage from "../images/DSC0090.jpg"
 import SectionTwoImage from "../images/DSC0126.jpg"
 import SectionThreeImage from "../images/DSC0095.jpg"
 import SectionFourImage from "../images/DSC-0260.jpg"
+import ContentImage from "../images/DSC0090.jpg"
 
 // import Image from "../components/image"
 import SEO from "../components/seo"
@@ -47,9 +48,11 @@ const IndexPage = () => (
       layoutType="container-center-content"
     >
       Hulse Dental’s expertise and state-of-the-art technologies allows us to offer preventative, restorative and orthodontic services all in-house.
-    </FullScreenSection>
+    </FullScreenSection> 
 
-    <ContentTextPict />
+    <ContentTextPict image={ContentImage}>
+      We believe that we can make a difference for you by providing artistic restorative family dental care and cosmetic dental care supported by extraordinary preventive services. We believe in using the best in staff, clinical expertise and dental materials to provide the best dental care with dependable and calculable results. Our goal is to make you feel welcome from your first contact with us and leave you with the feeling that you want to be our dental patient for life. Our main focus is your oral health and we provide the highest quality preventative dentistry, family dentistry, and cosmetic dentistry for you. Your smile is in good hands!
+    </ContentTextPict>
 
 
     
