@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Navbar from "../components/navbar"
 import HeroImage from "../images/DSC0227.jpg"
 import HeroLevel2 from "../components/hero-level-2"
+import FSTextBlock from "../components/content-fs-text-block"
 import ContentTextPict from "../components/content-text-pict"
 
 const OurOffice = () => {
@@ -13,6 +14,12 @@ const OurOffice = () => {
         <SEO title="Our Office" />
         <Navbar transparent />
             <HeroLevel2 title="Our Office" image={HeroImage} />
+            <FSTextBlock bgColor="bg-gray-600" textColor="p-light">
+                <h2 className="text-center mb-8 px-10" >DENTIST KURT HULSE AND HIS TEAM<br />WELCOME YOU TO OUR ONALASKA OFFICE</h2>
+                <p>
+                It is our pleasure to welcome you and your family to our Hulse Dental and offer you a virtual tour of our services. Dr. Hulse has been a dentist in the area for over 20 years and is honored to be practicing dentistry in the Onalaska/La Crosse/Coulee Region helping people find their smiles and improving their oral health.
+                </p>
+            </FSTextBlock>
 
             <ContentTextPict image={HeroImage}>
                 <p>We believe that we can make a difference for you by providing artistic restorative family dental care and cosmetic dental care supported by extraordinary preventive services. We believe in using the best in staff, clinical expertise and dental materials to provide the best dental care with dependable and calculable results. Our goal is to make you feel welcome from your first contact with us and leave you with the feeling that you want to be our dental patient for life. Our main focus is your oral health and we provide the highest quality preventative dentistry, family dentistry, and cosmetic dentistry for you. Your smile is in good hands!</p>
