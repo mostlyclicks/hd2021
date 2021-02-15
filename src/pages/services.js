@@ -39,10 +39,6 @@ const Services = () => {
             </ContentTextPict>
 
             <Payment />
-
-
-
-
         </Layout>
     )
 }
