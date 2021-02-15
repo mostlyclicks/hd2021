@@ -6,11 +6,15 @@
 html, body {background-color:red;} */
 
 .p-light {
-    @apply text-base p-12 md:p-4 lg:text-2xl lg:leading-10 text-white text-opacity-80 font-light
+    @apply text-base p-12 md:p-4 lg:text-2xl lg:leading-8 text-white text-opacity-80 font-light
 }
 
 .p-dark {
-    @apply text-base p-12 md:leading-8 md:p-10 lg:text-2xl lg:leading-10 text-gray-500 text-opacity-80 font-light self-center
+    @apply text-base p-12 md:leading-8 md:p-10 lg:text-2xl lg:leading-8 text-gray-500 text-opacity-80 font-light self-center
 }
+
+/* table, td, tr {
+    @apply divide-y-0 divide-light-blue-50
+} */
 
 
