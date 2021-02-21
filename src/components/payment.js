@@ -28,37 +28,19 @@ export default class Payment extends React.Component {
 
 render() {
   return (
-  <Layout fullMenu>
-    <Helmet
-      title="Pay your bill online | Hulse Dental, Onalaska WI"
-      meta={[
-        {
-          name: 'description',
-          content:
-            'Pay your bill online at Hulse Dental.',
-        },
-        {
-          name: 'keywords',
-          content: 'pay online, Hulse Dental',
-        },
-      ]}
-    >
-      <html lang="en" />
-    </Helmet>
 
-    <article id="main">
-      <header>
-        <h2>Pay Your Bill</h2>
-        <p></p>
-      </header>
-      <section className="wrapper style5">
-        <div className="inner">
-          <h2>Pay Your Bill Online</h2>
+
+   
+    <section className="bg-gray-50 pb-6">
+      <div className="container m-auto py-4 w-full md:w-6/12 lg:w-4/12">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold p-dark text-center">Pay Your Bill Online</h2>
 
           <form
             target="_blank"
             action="https://hosted.transactionexpress.com/Transaction/Transaction/Index"
             method="POST"
+
           >
             <input
               type="hidden"
@@ -122,7 +104,8 @@ render() {
               value="N"
             />
             <input type="hidden" name="PostRspMsg" id="PostRspMsg" value="N" />
-            Account Name:
+            <div className="w-full p-4">
+            <label className="" >Account Name:</label>
             <input
               type="text"
               required
@@ -130,12 +113,15 @@ render() {
               id="custrefid"
               value={this.state.customerID}
               onChange={this.handleChange}
+              className="rounded w-full my-4"
             />
             <br />
-            <input type="Submit" name="Submit" id="Submit" value="Pay Now" />
+            <input type="Submit" name="Submit" id="Submit" value="Pay Now" className="py-3 w-full rounded hover:bg-gray-700 hover:text-white" />
+            </div>
           </form>
         </div>
+      </div>
       </section>
-    </article>
-  </Layout>
+   
+
   )}};

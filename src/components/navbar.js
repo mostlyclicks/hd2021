@@ -1,6 +1,5 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faBars, faBaby } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'gatsby';
 
 export default function Navbar(props) {
 
@@ -26,18 +25,20 @@ export default function Navbar(props) {
           sm:justify-around
           xs:w-full 
           xs:justify-around
-          lg:w-6/12 md:text-white xs:text-red">
+          lg:w-6/12 md:text-white xs:text-red
+            
+          ">
               <li>
-                  Our Office
+                  <Link to="/our-office">Our Office</Link>
               </li>
               <li>
-                  Services
+                  <Link to="/services">Services</Link>
               </li>
               <li>
-                  Dr. Hulse
+                  <Link to="/dr-kurt-hulse">Dr. Hulse</Link>
               </li>
               <li>
-                  Contact Us
+                  <Link to="/contact-us">Contact Us</Link>
               </li>
           </ul>
         

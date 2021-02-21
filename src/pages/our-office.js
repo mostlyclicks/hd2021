@@ -6,14 +6,15 @@ import HeroImage from "../images/DSC0227.jpg"
 import HeroLevel2 from "../components/hero-level-2"
 import FSTextBlock from "../components/content-fs-text-block"
 import ContentTextPict from "../components/content-text-pict"
+import Payment from '../components/payment'
 
 const OurOffice = () => {
 
     return (
         <Layout>
-        <SEO title="Our Office" />
+        <SEO title="Our Office | Hulse Dental, Onalaski WI" />
         <Navbar transparent />
-            <HeroLevel2 title="Our Office" image={HeroImage} />
+            <HeroLevel2 title="Our Office" image={HeroImage} minHeight="100vh" />
             <FSTextBlock bgColor="bg-gray-600" textColor="p-light">
                 <h2 className="text-center mb-8 px-10" >DENTIST KURT HULSE AND HIS TEAM<br />WELCOME YOU TO OUR ONALASKA OFFICE</h2>
                 <p>
@@ -45,6 +46,7 @@ const OurOffice = () => {
                     <li>Dental Insurance Policy Form</li>
                 </ul>
             </ContentTextPict>
+            <Payment />
 
         </Layout>
     )

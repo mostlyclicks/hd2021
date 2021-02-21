@@ -13,6 +13,18 @@ html, body {background-color:red;} */
     @apply text-base p-12 md:leading-8 md:p-10 lg:text-2xl lg:leading-8 text-gray-500 text-opacity-80 font-light self-center
 }
 
+.text-smaller {
+    @apply text-sm
+}
+
+h3 {
+    @apply font-bold pb-6 text-3xl
+}
+
+p {
+    @apply pb-6
+}
+
 /* table, td, tr {
     @apply divide-y-0 divide-light-blue-50
 } */

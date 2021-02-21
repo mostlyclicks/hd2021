@@ -1,13 +1,13 @@
 import React from 'react'
-// import HeroImage from "../images/DSC0104.jpg"
+import { Link } from 'gatsby'
 import Logo from "../images/Logo_1016px_Wide_light_purple_text.png"
 
-const HeroLevel2 = ({title, image}) => {
+const HeroLevel2 = ({title, image, minHeight}) => {
 
     return (
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
             style={{
-              minHeight: "100vh"
+              minHeight: `${minHeight}`
             }}>
           <div className="absolute top-0 w-full h-full bg-center bg-cover"
               style={{
@@ -22,8 +22,8 @@ const HeroLevel2 = ({title, image}) => {
                     <h1 className="text-white font-semibold text-5xl hidden">
                         Hulse Dental - {title}                 
                     </h1>
-                    <img src={Logo} className="xs:w-12/12 sm:w-8/12 m-auto"  />
-                    <h2>{title}</h2>
+                    <Link to="/"><img src={Logo} className="xs:w-12/12 sm:w-8/12 m-auto"  /></Link>
+                    <h2 className="text-white font-500 text-3xl">{title}</h2>
                   </div>
                 </div>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContentTextPict = ({children, image, reversed, positionOne}) => {
+const ContentTextPict = ({children, image, reversed, positionOne, lgContainer, customClasses}) => {
 
     return (
         <>
@@ -8,7 +8,8 @@ const ContentTextPict = ({children, image, reversed, positionOne}) => {
             flex flex-col-reverse
             md:flex md:mx-auto
             ${reversed ? 'md:flex-row-reverse' : 'md:flex-row'}
-            lg:container
+            ${lgContainer ? 'lg:container' : ''}
+            ${customClasses}
         `}>
             <div className={'p-dark ' + (positionOne ? 'md:w-9/12' : 'md:w-6/12')}>
                 {children}
