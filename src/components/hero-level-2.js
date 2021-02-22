@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Logo from "../images/Logo_1016px_Wide_light_purple_text.png"
+import Logo from "../images/Logo_1016px_white_edge_2.png"
 
 const HeroLevel2 = ({title, image, minHeight}) => {
 
