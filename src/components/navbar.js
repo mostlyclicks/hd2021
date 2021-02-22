@@ -22,7 +22,6 @@ export default function Navbar(props) {
           flex 
           m-auto 
           mt-6 
-          
           w-full 
           justify-around
           lg:w-6/12 md:text-white xs:text-red

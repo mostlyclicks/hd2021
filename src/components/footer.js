@@ -23,7 +23,7 @@ const Footer = () => {
                 1840 EAST MAIN STREET<br/>
                 ONALASKA, WI 54650<br/>
                 (608) 783-1306<br/>
-                KURTHULSEDENTAL@GMAIL.COM<br />
+                <a href="mailto:kurthulsedental@gmail.com">KURTHULSEDENTAL@GMAIL.COM</a><br />
                
 
                 </p>

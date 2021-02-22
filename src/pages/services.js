@@ -17,7 +17,10 @@ const Services = () => {
 
     return (
         <Layout>
-        <SEO title="Services" />
+        <SEO 
+            title="Services | Hulse Dental serving the Coulee region"
+            description="Preventative, restorative and orthodontic services at Hulse Dental serving Onalaska, La Crosse and Holmen WI"
+        />
         <Navbar transparent />
             <HeroLevel2 title="Services" image={HeroImage} minHeight="100vh" />
             <ContentTextPict image={PreventativeImage}>

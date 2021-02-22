@@ -18,7 +18,10 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO 
+      title="Welcome to Hulse Dental of Onalaska WI"
+      description="Learn more about Hulse Dental, our services, office and Dr. Kurt Hulse."  
+    />
     <Navbar transparent/>
     <Hero />
 

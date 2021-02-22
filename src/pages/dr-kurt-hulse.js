@@ -13,7 +13,10 @@ const DrKurtHulse = () => {
 
     return (
         <Layout>
-            <SEO title="Dr. Kurt Hulse | Hulse Dental, Onalaska WI" />
+            <SEO 
+                title="Dr. Kurt Hulse | Hulse Dental, Onalaska WI"
+                description="Learn more about Dr. Kurt Hulse of Hulse Dental in Onalaska Wisconsin."
+            />
             <Navbar transparent />
             <HeroLevel2 title="Dr. Kurt Hulse" image={HeroImage} minHeight="100vh" className="bm-10"/>
 
