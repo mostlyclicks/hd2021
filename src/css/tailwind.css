@@ -5,6 +5,20 @@
 /* html, body {background-color:#D8D9DD;}
 html, body {background-color:red;} */
 
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+}
+
+h1,h2,h3 {
+    font-weight:700;
+}
+
+nav ul {
+    font-family: 'Noto Sans JP', sans-serif;
+    
+}
+
 .p-light {
     @apply text-base p-12 md:p-4 lg:text-2xl lg:leading-8 text-white text-opacity-80 font-light
 }
