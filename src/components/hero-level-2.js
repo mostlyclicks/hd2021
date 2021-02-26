@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Logo from "../images/Logo_1016px_white_edge_2.png"
+import { motion } from "framer-motion"
+import HeroLogo from "../components/hero-logo"
 
 const HeroLevel2 = ({title, image, minHeight}) => {
 
@@ -9,12 +10,17 @@ const HeroLevel2 = ({title, image, minHeight}) => {
             style={{
               minHeight: `${minHeight}`
             }}>
-          <div className="absolute top-0 w-full h-full bg-center bg-cover"
+          <motion.div 
+            animate={{ scale: 1.0, opacity: 1 }} 
+            initial={{opacity: 0, scale: 1.1}}
+            transition={{duration:.8}}
+          
+            className="absolute top-0 w-full h-full bg-center bg-cover"
               style={{
                 backgroundImage: `url(${image})`
               }}>
             <span id="blackOverlay" className="w-full h-full absolute opacity-60 bg-black"></span>
-          </div>
+          </motion.div>
           <div className="container relative mx-auto">
               <div className="items-center flex flex-wrap">
                 <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
@@ -22,8 +28,14 @@ const HeroLevel2 = ({title, image, minHeight}) => {
                     <h1 className="text-white font-semibold text-5xl hidden">
                         Hulse Dental - {title}                 
                     </h1>
-                    <Link to="/"><img src={Logo} className="xs:w-12/12 sm:w-8/12 m-auto"  /></Link>
-                    <h2 className="text-white font-500 text-3xl">{title}</h2>
+                    <Link to="/"><HeroLogo /></Link>
+                    <motion.div 
+                      animate={{ opacity: [0,0,1], scale:1 }} 
+                      initial={{opacity: 0, scale:1.1}}
+                      transition={{duration:1.9}}
+                      >
+                        <h2 className="text-white font-500 text-3xl">{title}</h2>
+                    </motion.div>
                   </div>
                 </div>
 
