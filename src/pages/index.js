@@ -1,9 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Navbar from "../components/navbar"
 import Hero from "../components/hero"
+import Image from 'gatsby-image'
 import ContentTextPict from "../components/content-text-pict.js"
 
 import FullScreenSection from "../components/fullscreen-section"
@@ -12,18 +13,36 @@ import SectionTwoImage from "../images/DSC0126.jpg"
 import SectionThreeImage from "../images/DSC0095.jpg"
 import SectionFourImage from "../images/DSC-0260.jpg"
 import Payment from '../components/payment'
-
-// import Image from "../components/image"
+import HeroSection from "../components/hero-section"
+import FullscreenImage from "../components/fullscreen-image"
 import SEO from "../components/seo"
+import HeroLogo from "../components/hero-logo"
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
     <SEO 
       title="Welcome to Hulse Dental of Onalaska WI"
       description="Learn more about Hulse Dental, our services, office and Dr. Kurt Hulse."  
     />
+
     <Navbar transparent/>
-    <Hero />
+
+    <HeroSection title="Home">
+      <div className="relative min-h-screen w-full h-full bg-gray-500">
+        <div className="relative z-10 flex justify-center h-screen w-full">
+            <div className="self-center flex flex-col">
+              <HeroLogo />
+              <h3 className="self-center text-gray-400 text-2xl">Welcome to Hulse Dental, Onalaska Wisconsin</h3>
+            </div>
+        </div>     
+        <FullscreenImage>
+          <Image fluid={data.heroImage.childImageSharp.fluid} className="object-fill object-center h-screen"/>
+        </FullscreenImage>
+      </div>
+    </HeroSection>
+    
+    
+    
 
     <FullScreenSection
       bgImage={SectionOneImage}
@@ -53,8 +72,48 @@ const IndexPage = () => (
       Hulse Dental’s expertise and state-of-the-art technologies allows us to offer preventative, restorative and orthodontic services all in-house.
     </FullScreenSection> 
 
+    {/* <Img fluid={data.heroImage.childImageSharp.fluid} />
+    <Img fluid={data.section1.childImageSharp.fluid} />
+    <Img fluid={data.section2.childImageSharp.fluid} />
+    <Img fluid={data.section3.childImageSharp.fluid} />
+    <Img fluid={data.section4.childImageSharp.fluid} /> */}
+
     <Payment />
   </Layout>
 )
 
 export default IndexPage
+
+
+export const indexImages = graphql`
+  fragment indexImage on File {
+    childImageSharp {
+      fluid {
+        ...GatsbyImageSharpFluid_noBase64
+      }
+    }
+  }
+`
+
+export const query = graphql`
+  query {
+    heroImage: file(relativePath: { eq: "DSC0104.jpg" }) {
+      ...indexImage
+    }
+    section1: file(relativePath: { eq: "DSC0090.jpg" }) {
+      ...indexImage
+    }
+    section2: file(relativePath: { eq: "DSC0095.jpg" }) {
+      ...indexImage
+    }
+    section3: file(relativePath: { eq: "DSC0126.jpg" }) {
+      ...indexImage
+    }
+    section4: file(relativePath: { eq: "DSC-0260.jpg" }) {
+      ...indexImage
+    }
+
+
+  }
+`
+
