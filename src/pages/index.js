@@ -44,7 +44,13 @@ const IndexPage = ({data}) => (
               >
                   Welcome to Hulse Dental, Onalaska Wisconsin
               </motion.h3>
-              <ScrollArrow destination="#section-2" />
+              <motion.div
+                animate={{opacity:1}}
+                initial={{opacity:0}}
+                transition={{duration:1, delay:1.25}}
+              >
+                <ScrollArrow destination="#section-2" />
+              </motion.div>
             </div>
             
         </div>     

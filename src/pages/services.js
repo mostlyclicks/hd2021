@@ -23,6 +23,7 @@ const Services = () => {
         />
         <Navbar transparent />
             <HeroLevel2 title="Services" image={HeroImage} minHeight="100vh" />
+            <a id="section-2"></a>
             <ContentTextPict image={PreventativeImage}>
                 <h3>Preventative Services</h3>
                 <p>Preventative services are important in maintaining your overall health as well as your oral health. Did you know that bacteria in your mouth, if left untreated, can lead to periodontal disease and eventually systemic diseases? Regular checkups are important to help preclude these health issues. We focus on quality preventive dental care individualized for each patient. By providing you with a dental treatment plan that fits your needs we can help you maintain the best dental health possible.</p>

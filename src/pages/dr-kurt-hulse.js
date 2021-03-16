@@ -19,7 +19,7 @@ const DrKurtHulse = () => {
             />
             <Navbar transparent />
             <HeroLevel2 title="Dr. Kurt Hulse" image={HeroImage} minHeight="100vh" className="bm-10"/>
-
+            <a id="section-2"></a>
             <ContentTextPict image={KurtHulse} positionOne lgContainer customClasses=" md:mt-16">
                 <p>Dr. Hulse is an Onalaska native. He studied Biology and Chemistry at Luther College in Decorah IA where he also met his wife Jeanne. He attended Dental School at the University of Minnesota and entered the U.S. Navy upon his graduation as a general dentist. He completed a General Practice Residency program at Balboa Naval Hospital and served aboard the USS Fort McHenry. After completing his tour of duty, he returned to the coulee region to establish Hulse Dental as a center for family dental care, restorative dentistry (fillings and crowns), and cosmetic dentistry, including teeth whitening, endodontic (root canal) &amp; orthodontic (braces/Invisalign) services. Dr Hulse is an active member of the Academy of Cosmetic Dentistry, a past president of the LaCrosse District Dental Society and was the La Crosse area Director for the Give Kids a Smile program for 15 years. Dr, Hulse and his wife Jeanne live in Onalaska and have three sons, Kyle, Garrett and Calvin. In addition to dentistry, Dr. Hulse enjoys spending time with his family, art, outdoor recreation and travel.</p>
             </ContentTextPict>

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { motion } from "framer-motion"
 import HeroLogo from "../components/hero-logo"
+import ScrollArrow from "../components/scroll-arrow"
 
 const HeroLevel2 = ({title, image, minHeight}) => {
 
@@ -35,6 +36,13 @@ const HeroLevel2 = ({title, image, minHeight}) => {
                       transition={{duration:1.9}}
                       >
                         <h2 className="text-white font-500 text-3xl">{title}</h2>
+                    </motion.div>
+                    <motion.div
+                      animate={{opacity:1}}
+                      initial={{opacity:0}}
+                      transition={{duration:1, delay:1.25}}
+                    >
+                      <ScrollArrow destination="#section-2" />
                     </motion.div>
                   </div>
                 </div>

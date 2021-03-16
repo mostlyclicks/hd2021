@@ -24,6 +24,8 @@ const OurOffice = () => {
         <SEO title="Our Office | Hulse Dental, Onalaski WI" />
         <Navbar transparent />
             <HeroLevel2 title="Our Office" image={HeroImage} minHeight="100vh" />
+                
+            <a id="section-2"></a>
             <FSTextBlock bgColor="bg-gray-600" textColor="p-light">
                 <h2 className="text-center mb-8 px-10" >DENTIST KURT HULSE AND HIS TEAM<br />WELCOME YOU TO OUR ONALASKA OFFICE</h2>
                 <p>
