@@ -13,7 +13,7 @@ import Img3 from "../images/DSC0198.jpg"
 import Img4 from "../images/DSC0201.jpg"
 import NewPatientForm1 from "../images/New-Patient-Registration-page-1.pdf"
 import NewPatientForm2 from "../images/New-Patient-Registration-page-2.pdf"
-import MedicalHistory from "../images/MedicalHistory.pdf"
+import MedicalHistory from "../images/Medical-History-update.pdf"
 import HealthInfo from "../images/HIPAA.pdf"
 import DentalInsurance from "../images/dental_insurance_policy.pdf"
 

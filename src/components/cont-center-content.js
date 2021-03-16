@@ -26,9 +26,7 @@ const ContainerCenterContent = ({children, heroImage}) => {
             ">
               {children}
             </p>
-            <button className="bg-gray-500 text-white py-4 px-8 text-2xl font-light">
-              Learn More
-            </button>
+           
           </div>
         </div>
       </div>
