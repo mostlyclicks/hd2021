@@ -11,11 +11,6 @@ import Img1 from "../images/DSC0080.jpg"
 import Img2 from "../images/DSC0118.jpg"
 import Img3 from "../images/DSC0198.jpg"
 import Img4 from "../images/DSC0201.jpg"
-import NewPatientForm1 from "../images/New-Patient-Registration-page-1.pdf"
-import NewPatientForm2 from "../images/New-Patient-Registration-page-2.pdf"
-import MedicalHistory from "../images/Medical-History-update.pdf"
-import HealthInfo from "../images/HIPAA.pdf"
-import DentalInsurance from "../images/dental_insurance_policy.pdf"
 
 const OurOffice = () => {
 
@@ -52,11 +47,11 @@ const OurOffice = () => {
                 <h3>Patient Forms For Dental Care</h3>
                 <p>Please click on the following links to access the dental forms necessary for your appointment. Feel free to complete the forms and email them to us at kurthulsedental@gmail.com, send them in the mail, or bring them with you to your dental appointment. If you have any questions for the dentist or office staff prior to your appointment, you can call us at 608.783.1306 or email your questions along with your paperwork. We follow all HIPPA privacy requirements and do everything possible to maintain your privacy.</p>
                 <ul>
-                    <li><a href={NewPatientForm1}>New Patient Form Page One</a></li>
-                    <li><a href={NewPatientForm2}>New Patient Form Page Two</a></li>
-                    <li><a href={MedicalHistory}>Medical History</a></li>
-                    <li><a href={HealthInfo}>Health Information Consent and Use Form</a></li>
-                    <li><a href={DentalInsurance}>Dental Insurance Policy Form</a></li>
+                    <li><a href="https://hd10.s3.amazonaws.com/Forms/New-Patient-Registration-page-1.pdf">New Patient Form Page One</a></li>
+                    <li><a href="https://hd10.s3.amazonaws.com/Forms/New-Patient-Registration-page-2.pdf">New Patient Form Page Two</a></li>
+                    <li><a href="https://hd10.s3.amazonaws.com/Forms/Medical-History-update.pdf">Medical History</a></li>
+                    <li><a href="https://hd10.s3.amazonaws.com/Forms/HIPAA.pdf">Health Information Consent and Use Form</a></li>
+                    <li><a href="https://hd10.s3.amazonaws.com/Forms/dental_insurance_policy.pdf">Dental Insurance Policy Form</a></li>
                 </ul>
             </ContentTextPict>
             <Payment />
