@@ -7,7 +7,7 @@ const ScrollArrow = ({destination}) => {
     return (
         <div className="flex mt-8">
             <div className="self-center mx-auto">
-                <a onClick={() => scrollTo(`${destination}`)} href="#section-2" className="self-center text-white">
+                <a onClick={() => scrollTo(`${destination}`)} href={`${destination}`} className="self-center text-white">
                     <FaAngleDown className="text-5xl "/>
                 </a>
             </div>

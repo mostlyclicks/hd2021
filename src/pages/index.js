@@ -40,7 +40,7 @@ const IndexPage = ({data}) => (
                 initial={{opacity:0}}
                 animate={{opacity:1}}
                 transition={{duration:1, delay:1}}
-                className="self-center text-gray-400 text-2xl"
+                className="self-center text-gray-400 text-2xl text-center"
               >
                   Welcome to Hulse Dental, Onalaska Wisconsin
               </motion.h3>
