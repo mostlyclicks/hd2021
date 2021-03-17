@@ -17,6 +17,17 @@ h1,h2,h3 {
     font-weight:700;
 }
 
+.staff figure {
+   @apply w-6/12 flex-wrap items-start sm:w-4/12  self-center p-2 mb-3 
+
+}
+
+.staff figcaption {
+    @apply h-7 text-center text-sm py-2
+}
+
+
+
 
 .p-light {
     @apply text-base p-12 md:p-4 lg:text-2xl lg:leading-8 text-white text-opacity-80 font-light

@@ -11,6 +11,12 @@ import Img1 from "../images/DSC0080.jpg"
 import Img2 from "../images/DSC0118.jpg"
 import Img3 from "../images/DSC0198.jpg"
 import Img4 from "../images/DSC0201.jpg"
+import StaffKurt from "../images/Staff-Kurt-Hulse.jpg"
+import StaffJane from "../images/Staff-Jane-OfficeManager.jpg"
+import StaffJeanne from "../images/Staff-Jeanne-ClinicManager.jpg"
+import StaffAlisha from "../images/Staff-Alisha-Dental-Assistant.jpg"
+import StaffAmy from "../images/Staff-Amy-Hygienist.jpg"
+import StaffSandra from "../images/Staff-Sandra-Dental-Hygienist.jpg"
 
 const OurOffice = () => {
 
@@ -43,6 +49,8 @@ const OurOffice = () => {
                 <p>For your convenience, we have provided these dental forms and policies for you to read and fill out before your visit to see the dentist or staff at Hulse Dental. It is our pleasure to provide you with the convenience of completing these forms prior to your visit, or come to our office where we can help you with this process. We are proud to present the highest level of professionalism and dental care while staying focused on providing the utmost in confidentiality to our patients. Whether you visit the us for a routine procedure or a more systemic issue, our team at Hulse Dental respects you and your privacy. We are honored to be trusted with your care. It is our pleasure to serve you! If you have any questions, please feel free to call Hulse Dental in Onalaska at 608.783.1306 or email us at kurthulsedental@gmail.com</p>
             </ContentTextPict>
 
+            
+
             <ContentTextPict image={Img4}>
                 <h3>Patient Forms For Dental Care</h3>
                 <p>Please click on the following links to access the dental forms necessary for your appointment. Feel free to complete the forms and email them to us at kurthulsedental@gmail.com, send them in the mail, or bring them with you to your dental appointment. If you have any questions for the dentist or office staff prior to your appointment, you can call us at 608.783.1306 or email your questions along with your paperwork. We follow all HIPPA privacy requirements and do everything possible to maintain your privacy.</p>
@@ -54,6 +62,23 @@ const OurOffice = () => {
                     <li><a href="https://hd10.s3.amazonaws.com/Forms/dental_insurance_policy.pdf">Dental Insurance Policy Form</a></li>
                 </ul>
             </ContentTextPict>
+            
+            <FSTextBlock>
+            <hr/>
+            <div className=" staff my-18">
+                <h3 className="text-center">Our Staff</h3>
+                <div className="flex flex-wrap lg:container">
+                <figure><img src={StaffKurt} alt="Dr. Kurt Hulse"/><figcaption>Dr. Kurt Hulse</figcaption></figure>
+                <figure><img src={StaffJane} alt="Jane - Office Manager"/><figcaption>Jane - Office Manager</figcaption></figure>
+                <figure><img src={StaffJeanne} alt="Jeanne - Clinic Manager"/><figcaption>Jeanne - Clinic Manager</figcaption></figure>
+                <figure><img src={StaffAlisha} alt="Alisha - Dental Assistant"/><figcaption>Alisha - Dental Assistant</figcaption></figure>
+                <figure><img src={StaffAmy} alt="Amy - Dental Hygienist"/><figcaption>Amy - Dental Hygienist</figcaption></figure>
+                <figure><img src={StaffSandra} alt="Sandra - Dental Hygienist"/><figcaption>Sandra - Dental Hygienist</figcaption></figure>
+                </div>
+            </div>
+            </FSTextBlock>
+
+
             <Payment />
 
         </Layout>
