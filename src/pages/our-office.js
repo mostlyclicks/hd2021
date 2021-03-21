@@ -22,7 +22,10 @@ const OurOffice = () => {
 
     return (
         <Layout>
-        <SEO title="Our Office | Hulse Dental, Onalaski WI" />
+        <SEO 
+            title="Our Office | Hulse Dental, Onalaski WI"
+            description="Learn more about Hulse Dental, our services, our office and Dr. Kurt Hulse."
+         />
         <Navbar transparent />
             <HeroLevel2 title="Our Office" image={HeroImage} minHeight="100vh" />
                 

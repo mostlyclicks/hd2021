@@ -26,7 +26,7 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO 
       title="Welcome to Hulse Dental of Onalaska WI"
-      description="Learn more about Hulse Dental, our services, office and Dr. Kurt Hulse."  
+      description="Learn more about Hulse Dental, our services, our office and Dr. Kurt Hulse."  
     />
 
     <Navbar transparent/>
@@ -42,7 +42,7 @@ const IndexPage = ({data}) => (
                 transition={{duration:1, delay:1}}
                 className="self-center text-gray-400 text-2xl text-center"
               >
-                  Welcome to Hulse Dental, Onalaska Wisconsin
+                Welcome to Hulse Dental, Onalaska Wisconsin
               </motion.h3>
               <motion.div
                 animate={{opacity:1}}
@@ -55,7 +55,7 @@ const IndexPage = ({data}) => (
             
         </div>     
         <FullscreenImage>
-          <Image fluid={data.heroImage.childImageSharp.fluid} className="object-fill object-center h-screen"/>
+          <Image fluid={data.heroImage.childImageSharp.fluid} className="object-fill object-center h-screen" alt="Hulse Dental Interior"/>
         </FullscreenImage>
       </div>
     </HeroSection>
@@ -94,12 +94,11 @@ const IndexPage = ({data}) => (
       bgImage={SectionFourImage}
       layoutType="container-center-content"
     >
-      
       Hulse Dental’s expertise and state-of-the-art technologies allows us to offer preventative, restorative and orthodontic services all in-house.
       <div>
       <Link to="/services">
-        <button className="bg-gray-500 text-white py-4 px-8 text-2xl font-light m-8">
-              Learn More
+        <button className="bg-gray-500 text-white py-4 px-8 text-base font-light m-8 hover:bg-gray-700">
+              Learn More About Our Services
         </button>
       </Link>
       </div>

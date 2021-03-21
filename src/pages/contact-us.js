@@ -11,7 +11,7 @@ const ContactUs = () => {
         <Layout>
             <SEO 
                 title="Contact Us | Hulse Dental, Onalaska WI"
-                description=""
+                description="Any questions or comments about Hulse Dental? Please drop us a message!"
             />
             <HeroLevel2 title="Contact Us" image={HeroImage} minHeight="40vh"/>
             <Navbar transparent />

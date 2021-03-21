@@ -21,6 +21,9 @@ const HeroLevel2 = ({title, image, minHeight}) => {
                 backgroundImage: `url(${image})`
               }}>
             <span id="blackOverlay" className="w-full h-full absolute opacity-60 bg-black"></span>
+            <span id="hidden-image" className="hidden">
+              <img src={image} alt={title} />
+            </span>
           </motion.div>
           <div className="container relative mx-auto">
               <div className="items-center flex flex-wrap">
