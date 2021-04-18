@@ -7,6 +7,8 @@ import HeroImage from '../images/DSC-0260.jpg'
 import ContentTextPict from '../components/content-text-pict'
 import KurtHulse from '../images/kurt_home.jpg'
 import Payment from '../components/payment'
+import FSTextBlock from "../components/content-fs-text-block"
+import Staff from "../components/staff"
 
 
 const DrKurtHulse = () => {
@@ -14,17 +16,20 @@ const DrKurtHulse = () => {
     return (
         <Layout>
             <SEO 
-                title="Dr. Kurt Hulse | Hulse Dental, Onalaska WI"
-                description="Learn more about Dr. Kurt Hulse of Hulse Dental in Onalaska Wisconsin."
+                title="Our Team | Hulse Dental, Onalaska WI"
+                description="Learn more about Dr. Kurt Hulse and the team at Hulse Dental in Onalaska Wisconsin."
             />
             <Navbar transparent />
-            <HeroLevel2 title="Dr. Kurt Hulse" image={HeroImage} minHeight="100vh" className="bm-10"/>
+            <HeroLevel2 title="Our Team" image={HeroImage} minHeight="100vh" className="bm-10"/>
             <a id="section-2"></a>
-            <ContentTextPict image={KurtHulse} positionOne lgContainer customClasses=" md:mt-16">
-                <p>Dr. Hulse is an Onalaska native. He studied Biology and Chemistry at Luther College in Decorah IA where he also met his wife Jeanne. He attended Dental School at the University of Minnesota and entered the U.S. Navy upon his graduation as a general dentist. He completed a General Practice Residency program at Balboa Naval Hospital and served aboard the USS Fort McHenry. After completing his tour of duty, he returned to the coulee region to establish Hulse Dental as a center for family dental care, restorative dentistry (fillings and crowns), and cosmetic dentistry, including teeth whitening, endodontic (root canal) &amp; orthodontic (braces/Invisalign) services. Dr Hulse is an active member of the Academy of Cosmetic Dentistry, a past president of the LaCrosse District Dental Society and was the La Crosse area Director for the Give Kids a Smile program for 15 years. Dr, Hulse and his wife Jeanne live in Onalaska and have three sons, Kyle, Garrett and Calvin. In addition to dentistry, Dr. Hulse enjoys spending time with his family, art, outdoor recreation and travel.</p>
-            </ContentTextPict>
+            <FSTextBlock lgContainer customClasses=" md:mt-16">
+                <p>Dr. Hulse is an Onalaska local. He went on to study at Luther College in Decorah, IA and attended the University of Minnesota Dental School. Upon graduation, Dr. Hulse was admitted to the General Practice Residency program at Balboa Naval Hospital. His love of the Coulee Region brought him back to the area where he established Hulse Dental as a center for family dental care, restorative dentistry (fillings and crowns), and cosmetic dentistry, including teeth whitening, endodontic (root canal) &amp; orthodontic (braces/Invisalign) services. Dr Hulse is an active member of the Academy of Cosmetic Dentistry, a past professor at the University of Minnesota Dental School, former President of the La Crosse District Dental Society and the recent Director of the La Crosse area Give Kids a Smile Program for 15 years. Dr. Hulse and his wife Jeanne live in Onalaska and have three sons, Kyle, Garrett and Calvin. He has a love of learning, and in his free-time enjoys spending time with his family, creating art, and enjoys a passion for the outdoors, sports and travel.</p>
+            </FSTextBlock>
 
             <section className="md:flex md:container mx-auto p-dark border-t">
+                <div className=" justify-center self-center px-6">
+                    <img src={KurtHulse} alt="Kurt Hulse"  /> 
+                </div>
                 <div className="pb-6 md:p-6  text-base">
                 <h3>Education</h3>
                 <ul className="list-outside list-disc ml-4">
@@ -47,6 +52,11 @@ const DrKurtHulse = () => {
                 </div>
 
             </section>
+
+            <FSTextBlock>
+            <hr/>
+                <Staff />
+            </FSTextBlock>
 
             <Payment />
         

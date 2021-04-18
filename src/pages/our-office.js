@@ -11,12 +11,7 @@ import Img1 from "../images/DSC0080.jpg"
 import Img2 from "../images/DSC0118.jpg"
 import Img3 from "../images/DSC0198.jpg"
 import Img4 from "../images/DSC0201.jpg"
-import StaffKurt from "../images/Staff-Kurt-Hulse.jpg"
-import StaffJane from "../images/Staff-Jane-OfficeManager.jpg"
-import StaffJeanne from "../images/Staff-Jeanne-ClinicManager.jpg"
-import StaffAlisha from "../images/Staff-Alisha-Dental-Assistant.jpg"
-import StaffAmy from "../images/Staff-Amy-Hygienist.jpg"
-import StaffSandra from "../images/Staff-Sandra-Dental-Hygienist.jpg"
+
 
 const OurOffice = () => {
 
@@ -66,20 +61,7 @@ const OurOffice = () => {
                 </ul>
             </ContentTextPict>
             
-            <FSTextBlock>
-            <hr/>
-            <div className=" staff my-18">
-                <h3 className="text-center">Our Staff</h3>
-                <div className="flex flex-wrap lg:container">
-                <figure><img src={StaffKurt} alt="Dr. Kurt Hulse"/><figcaption>Dr. Kurt Hulse</figcaption></figure>
-                <figure><img src={StaffJane} alt="Jane - Office Manager"/><figcaption>Jane - Office Manager</figcaption></figure>
-                <figure><img src={StaffJeanne} alt="Jeanne - Clinic Manager"/><figcaption>Jeanne - Clinic Manager</figcaption></figure>
-                <figure><img src={StaffAlisha} alt="Alisha - Dental Assistant"/><figcaption>Alisha - Dental Assistant</figcaption></figure>
-                <figure><img src={StaffAmy} alt="Amy - Dental Hygienist"/><figcaption>Amy - Dental Hygienist</figcaption></figure>
-                <figure><img src={StaffSandra} alt="Sandra - Dental Hygienist"/><figcaption>Sandra - Dental Hygienist</figcaption></figure>
-                </div>
-            </div>
-            </FSTextBlock>
+           
 
 
             <Payment />
@@ -89,3 +71,39 @@ const OurOffice = () => {
 }
 
 export default OurOffice
+
+
+// export const indexImages = graphql`
+//   fragment indexImage on File {
+//     childImageSharp {
+//       fluid {
+//         ...GatsbyImageSharpFluid_noBase64
+//       }
+//     }
+//   }
+// `
+
+// export const query = graphql`
+//   query {
+//     heroImage: file(relativePath: { eq: "DSC0227.jpg" }) {
+//       ...indexImage
+//     }
+//     section1: file(relativePath: { eq: "DSC0090.jpg" }) {
+//       ...indexImage
+//     }
+//     section2: file(relativePath: { eq: "DSC0095.jpg" }) {
+//       ...indexImage
+//     }
+//     section3: file(relativePath: { eq: "DSC0126.jpg" }) {
+//       ...indexImage
+//     }
+//     section4: file(relativePath: { eq: "DSC-0260.jpg" }) {
+//       ...indexImage
+//     }
+//   }
+// `
+
+// import Img1 from "../images/DSC0080.jpg"
+// import Img2 from "../images/DSC0118.jpg"
+// import Img3 from "../images/DSC0198.jpg"
+// import Img4 from "../images/DSC0201.jpg"

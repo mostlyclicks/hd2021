@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaInstagram } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaEnvelope } from 'react-icons/fa'
 
 const Footer = () => {
 
@@ -30,6 +30,7 @@ const Footer = () => {
                 <div className="flex py-4">
                      <a href="https://www.facebook.com/hulsedental"><FaFacebook className="mr-2" /></a>
                      <a href="https://www.instagram.com/hulse_dental/"><FaInstagram className="" /></a>
+                     <a href="/contact-us"><FaEnvelope className="ml-2"/></a>
                 </div>
 
             </div>

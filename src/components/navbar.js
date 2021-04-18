@@ -34,7 +34,7 @@ export default function Navbar(props) {
                   <Link to="/services">Services</Link>
               </li>
               <li>
-                  <Link to="/dr-kurt-hulse">Dr. Hulse</Link>
+                  <Link to="/our-team">Our Team</Link>
               </li>
               <li>
                   <Link to="/contact-us">Contact Us</Link>

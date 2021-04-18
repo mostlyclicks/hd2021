@@ -4,13 +4,9 @@ import Hero from "../components/hero"
 
 const HeroSection = ({children, image}) => {
 
-    console.log(image)
-
     return (
         <>
-            
             {children}
-           
         </>
     )
 }
