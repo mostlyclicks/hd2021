@@ -36,6 +36,7 @@ const Footer = () => {
                      <a href="https://www.instagram.com/hulse_dental/"><FaInstagram className="" /></a>
                      <a href="/contact-us"><FaEnvelope className="ml-2"/></a>
                 </div>
+                
 
             </div>
             <div className="w-full mb-12 md:w-6/12  lg:w-4/12">

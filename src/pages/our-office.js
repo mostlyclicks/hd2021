@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby-plugin-modal-routing'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Navbar from "../components/navbar"
@@ -29,6 +30,19 @@ const OurOffice = () => {
                 <h2 className="text-center mb-8 px-10" >DENTIST KURT HULSE AND HIS TEAM<br />WELCOME YOU TO OUR ONALASKA OFFICE</h2>
                 <p>
                 It is our pleasure to welcome you and your family to our Hulse Dental and offer you a virtual tour of our services. Dr. Hulse has been a dentist in the area for over 20 years and is honored to be practicing dentistry in the Onalaska/La Crosse/Coulee Region helping people find their smiles and improving their oral health.
+                </p>
+                <p>
+                    <Link
+                        to="/modal/covid/"
+                        asModal
+                        style={{
+                        color: '#ffffff',
+                        fontWeight: 'bold',
+                        }}
+                    >
+                        COVID-19 UPDATE
+                    </Link>
+                
                 </p>
             </FSTextBlock>
 

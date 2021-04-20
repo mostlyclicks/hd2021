@@ -9,6 +9,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-modal-routing`,
+      options: {
+        appElement: '#___gatsby',
+        modalProps: {
+          closeTimeoutMS: 500,
+        },
+      },
+    },
     {
       resolve:`gatsby-plugin-react-leaflet`,
       // options: {
