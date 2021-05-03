@@ -16,16 +16,14 @@ export default function Navbar(props) {
         }
       >
           <ul 
-          
           className="
-          text-white 
-          flex 
-          m-auto 
-          mt-6 
-          w-full 
-          justify-around
-          lg:w-6/12 md:text-white xs:text-red
-            
+            text-white 
+            flex 
+            m-auto 
+            mt-6 
+            w-full 
+            justify-around
+            lg:w-6/12 md:text-white text-sm md:text-base
           ">
               <li>
                   <Link to="/our-office">Our Office</Link>
@@ -35,6 +33,9 @@ export default function Navbar(props) {
               </li>
               <li>
                   <Link to="/our-team">Our Team</Link>
+              </li>
+              <li>
+                  <Link to="/articles">Articles</Link>
               </li>
               <li>
                   <Link to="/contact-us">Contact Us</Link>
