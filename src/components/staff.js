@@ -18,7 +18,7 @@ const Staff = () => {
   return (
     <div className=" staff my-18">
         <h3 className="text-center">Our Staff</h3>
-        <div className="flex flex-wrap lg:container">
+        <div className="flex flex-wrap sm:container md:container lg:container mx-auto py-20">
         
         <StaffComponent 
           name="Jane - Office Manager" 

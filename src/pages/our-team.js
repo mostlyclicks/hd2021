@@ -27,7 +27,7 @@ const DrKurtHulse = () => {
             </FSTextBlock>
 
             <section className="md:flex md:container md:flex-col lg:flex-row mx-auto p-dark border-t">
-                <div className=" justify-center mt-7 px-6 md:w-full lg:w-1/3">
+                <div className=" justify-center mt-7 pr-6 md:w-full lg:w-1/3">
                     <img src={KurtHulse} alt="Kurt Hulse"  /> 
                 </div>
                 <div className="pb-6 p-6  text-base lg:w-1/3">
@@ -53,9 +53,11 @@ const DrKurtHulse = () => {
 
             </section>
 
+            <Staff />
+
             <FSTextBlock>
             <hr/>
-                <Staff />
+                
             </FSTextBlock>
 
             <Payment />
