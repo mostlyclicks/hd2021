@@ -31,7 +31,7 @@ const Staff = () => {
           name="Jeanne - Clinic Manager"
           image={StaffJeanne}
           bgColor="#796a72"
-          description="I have been with Hulse Dental since it opened. I enjoy working behind the scenes to ensure Hulse Dental runs smoothly and efficiently so our team can focus on patient care."
+          description="I enjoy working behind the scenes at Hulse Dental while still having an opportunity to get to know our patients. I have been a part of Hulse Dental since it opened and enjoy the team atmosphere!"
         />
 
         <StaffComponent
@@ -52,7 +52,7 @@ const Staff = () => {
           name="Sandra - Dental Hygienist"
           image={StaffSandra}
           bgColor="#a8907b"
-          description="Details coming soon"
+          description="I am very lucky to work with such a great group of people that make the work day fun! I have been at Hulse Dental since 2002 & I obviously love it here. My favorite thing about Hulse Dental are the awesome patients! It has been a pleasure getting to know them."
         />
 
         <StaffComponent
@@ -73,7 +73,7 @@ const Staff = () => {
           name="Kate - Assistant"
           image={StaffKate}
           bgColor="#90887b"
-          description="I joined Hulse Dental in 2020 after being in a completely different career.  I enjoy learning about the dental field daily and the relationships I get to build with patients."
+          description="I enjoy learning new things about the dental field daily and the relationships I get to build with the patients. I came from a completely different career and the change to dental care has been wonderful!"
         />
 
         </div>
