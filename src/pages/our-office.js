@@ -66,12 +66,21 @@ const OurOffice = () => {
             <ContentTextPict image={Img4}>
                 <h3>Patient Forms For Dental Care</h3>
                 <p>Please click on the following links to access the dental forms necessary for your appointment. Feel free to complete the forms and email them to us at kurthulsedental@gmail.com, send them in the mail, or bring them with you to your dental appointment. If you have any questions for the dentist or office staff prior to your appointment, you can call us at 608.783.1306 or email your questions along with your paperwork. We follow all HIPPA privacy requirements and do everything possible to maintain your privacy.</p>
+               {/* 
                 <ul>
                     <li><a href="https://hd10.s3.amazonaws.com/Forms/New-Patient-Registration-page-1.pdf">New Patient Form Page One</a></li>
                     <li><a href="https://hd10.s3.amazonaws.com/Forms/New-Patient-Registration-page-2.pdf">New Patient Form Page Two</a></li>
                     <li><a href="https://hd10.s3.amazonaws.com/Forms/Medical-History-update.pdf">Medical History</a></li>
                     <li><a href="https://hd10.s3.amazonaws.com/Forms/HIPAA.pdf">Health Information Consent and Use Form</a></li>
                     <li><a href="https://hd10.s3.amazonaws.com/Forms/dental_insurance_policy.pdf">Dental Insurance Policy Form</a></li>
+                </ul>
+                */}
+                 <ul>
+                    <li><a href="New-Patient-Registration-page1.pdf">New Patient Form Page One</a></li>
+                    <li><a href="New-Patient-Registration-page2.pdf">New Patient Form Page Two</a></li>
+                    <li><a href="https://hd10.s3.amazonaws.com/Forms/Medical-History-update.pdf">Medical History</a></li>
+                    <li><a href="HIPAA.pdf">Health Information Consent and Use Form</a></li>
+                    <li><a href="HD-Financial-Policy.pdf">Financial Policy</a></li>
                 </ul>
             </ContentTextPict>
             
