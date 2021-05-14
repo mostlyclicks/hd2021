@@ -10,7 +10,7 @@ import Payment from "../components/payment"
 import PreventativeImage from "../images/DSC0234.jpg"
 import RestorativeImage from "../images/DSC0209.jpg"
 import OrthodonticImage from "../images/IMG-1417.jpg"
-import AdjunctImage from "../images/DSC0195.jpg"
+import AdjunctImage from "../images/ceiling_tv.jpg"
 import FullScreenSection from '../components/fullscreen-section'
 
 const Services = () => {

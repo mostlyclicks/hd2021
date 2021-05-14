@@ -9,7 +9,7 @@ import StaffAmy from "../images/Staff-Amy-Hygienist.jpg"
 import StaffSandra from "../images/Staff-Sandra-Dental-Hygienist.jpg"
 import StaffSarah from "../images/Staff-SarahPic2.jpg"
 import StaffTara from "../images/Staff-TaraPic2b.jpg"
-import StaffKate from "../images/KateFPO.jpg"
+import StaffKate from "../images/Staff-Kate.jpg"
 
  
 

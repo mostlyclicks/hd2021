@@ -31,7 +31,7 @@ const OurOffice = () => {
                 <p>
                 It is our pleasure to welcome you and your family to our Hulse Dental and offer you a virtual tour of our services. Dr. Hulse has been a dentist in the area for over 20 years and is honored to be practicing dentistry in the Onalaska/La Crosse/Coulee Region helping people find their smiles and improving their oral health.
                 </p>
-                <p>
+                <p className="text-center">
                     <Link
                         to="/modal/covid/"
                         asModal
