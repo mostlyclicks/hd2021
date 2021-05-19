@@ -20,7 +20,7 @@ const ContactUs = () => {
                 <p>If you have any questions please feel free to drop us a note. We'll get back to you as soon as possible.</p>
                 <p>You can also call us at <a href="tel:608-783-1306">(608) 783-1306</a> or email us: <a href="mailto:kurthulsedental@gmail.com">KURTHULSEDENTAL@GMAIL.COM</a></p>
                 <p>Thank you!</p>
-            <form name="contact" data-netlify="true" action="/thank-you">
+            <form name="contact" method="post" data-netlify="true" action="/thank-you">
             <p>
                 <label>Name <input type="text" name="name" className="w-full rounded text-2xl" /></label>
             </p>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import HeroLevel2 from '../components/hero-level-2'
 import Layout from '../components/layout'
 import Navbar from '../components/navbar'
@@ -19,7 +20,7 @@ const ThankYou = () => {
             <div style={{minHeight:'30vh'}} className="p-10 md:w-8/12 lg:w-6/12 xl:w-4/12 mx-auto">
                 <p>Thank you for your message. We'll contact you shortly.</p>
                 <p>You can also call us at <a href="tel:608-783-1306">(608) 783-1306</a> or email us: <a href="mailto:kurthulsedental@gmail.com">KURTHULSEDENTAL@GMAIL.COM</a></p>
-                <p>Thank you!</p>
+                <p><Link to="/">Go to Homepage</Link></p>
             
             </div>
         </Layout>
