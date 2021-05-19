@@ -22,7 +22,7 @@ const ContactUs = () => {
                 <p>Thank you!</p>
             <form name="Contact Form" method="post" data-netlify="true" action="/thank-you">
 
-                <input type="hidden" name="Contact Form" value="Contact Form" arial-label="Contact Form" />
+                <input type="hidden" name="form-name" value="Contact Form" arial-label="Contact Form" />
 
             <p>
                 <label>Name <input type="text" name="name" className="w-full rounded text-2xl" /></label>
