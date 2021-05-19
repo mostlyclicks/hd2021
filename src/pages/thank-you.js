@@ -11,10 +11,10 @@ const ThankYou = () => {
     return (
         <Layout>
             <SEO 
-                title="Contact Us | Hulse Dental, Onalaska WI"
+                title="Thank you for contacting us | Hulse Dental, Onalaska WI"
                 description="Any questions or comments about Hulse Dental? Please drop us a message!"
             />
-            <HeroLevel2 title="Contact Us" image={HeroImage} minHeight="40vh"/>
+            <HeroLevel2 title="Thank You!" image={HeroImage} minHeight="40vh"/>
             <Navbar transparent />
             <a id="section-2"></a>
             <div style={{minHeight:'30vh'}} className="p-10 md:w-8/12 lg:w-6/12 xl:w-4/12 mx-auto">
