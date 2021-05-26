@@ -29,10 +29,12 @@ const ServicesPrismic = ({data}) => {
 
   const sectionThreeTitle = document.body[3].primary.section_title.text
   const sectionThreeImage = document.body[3].primary.image.url
+  const sectionThreeImageAlt = document.body[3].primary.image.alt
   const sectionThreeText = document.body[3].primary.section_text
 
   const sectionFourTitle = document.body[4].primary.section_title.text
   const sectionFourImage = document.body[4].primary.image.url
+  const sectionFourImageAlt = document.body[4].primary.image.alt
   const sectionFourText = document.body[4].primary.section_text
 
   console.log(sectionTwoTitle)
@@ -61,12 +63,12 @@ const ServicesPrismic = ({data}) => {
                 <RichText render={sectionTwoText.raw} />
             </FullScreenSection>
 
-            <ContentTextPict image={sectionThreeImage} positionOne lgContainer>
+            <ContentTextPict image={sectionThreeImage} alt={sectionThreeImageAlt} positionOne lgContainer>
                 <h3>{sectionThreeTitle}</h3>
                 <RichText render={sectionThreeText.raw} />
             </ContentTextPict>
 
-            <ContentTextPict image={sectionFourImage} reversed lgContainer>
+            <ContentTextPict image={sectionFourImage} alt={sectionFourImageAlt} reversed lgContainer>
                 <h3>{sectionFourTitle}</h3>
                 <RichText render={sectionFourText.raw} />
             </ContentTextPict>
