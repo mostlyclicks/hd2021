@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContentTextPict = ({children, image, reversed, positionOne, lgContainer, customClasses}) => {
+const ContentTextPict = ({children, image, alt, reversed, positionOne, lgContainer, customClasses}) => {
 
     return (
         <>
@@ -15,7 +15,7 @@ const ContentTextPict = ({children, image, reversed, positionOne, lgContainer, c
                 {children}
             </div>
             <div className={'p-12 pb-0 md:p-12 ' + (positionOne ? 'md:w-3/12' : 'md:w-6/12')}>
-                <img src={image} />
+                <img src={image} alt={alt} />
             </div>
         </section>
     </>

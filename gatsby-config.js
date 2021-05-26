@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 const path = require(`path`)
 
 module.exports = {
@@ -7,6 +11,17 @@ module.exports = {
     author: `mostlyClicks`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-prismic`,
+      options: {
+        repositoryName: `hd01`,
+        accessToken: `${process.env.API_KEY}`,
+        linkResolver: ({ node, key, value }) => page => `/${page.uid}`,
+        schemas: {
+         page: require("./custom_types/page.json"),
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`,
