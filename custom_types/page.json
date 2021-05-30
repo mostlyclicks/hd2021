@@ -21,7 +21,8 @@
       "config" : {
         "labels" : {
           "text_image_section" : [ ],
-          "hero_section" : [ ]
+          "hero_section" : [ ],
+          "text_hero" : [ ]
         },
         "choices" : {
           "text" : {
@@ -173,6 +174,32 @@
                   "constraint" : { },
                   "thumbnails" : [ ],
                   "label" : "Hero Image"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "text_hero" : {
+            "type" : "Slice",
+            "fieldset" : "Text Hero",
+            "description" : "Text title with lead paragraph",
+            "icon" : "format_color_text",
+            "display" : "list",
+            "non-repeat" : {
+              "text_hero_title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph, heading2",
+                  "label" : "Text Hero Title",
+                  "placeholder" : "Text Hero Title"
+                }
+              },
+              "text_hero_body" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label" : "Text Hero Body",
+                  "placeholder" : "Text Hero Body"
                 }
               }
             },
