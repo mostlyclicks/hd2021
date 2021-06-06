@@ -1,0 +1,137 @@
+{
+  "Main" : {
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "labels" : {
+          "hero" : [ ],
+          "intro_message" : [ {
+            "name" : "intro_message",
+            "display" : "intro message"
+          } ],
+          "full_screen_section" : [ ]
+        },
+        "choices" : {
+          "hero" : {
+            "type" : "Slice",
+            "fieldset" : "Hero",
+            "description" : "Big full screen component",
+            "icon" : "accessibility",
+            "display" : "list",
+            "non-repeat" : {
+              "hero_title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label" : "Hero Title",
+                  "placeholder" : "Hero Title"
+                }
+              },
+              "hero_content" : {
+                "type" : "Text",
+                "config" : {
+                  "label" : "Hero Content",
+                  "placeholder" : "Hero Content"
+                }
+              },
+              "hero_background_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Hero Background Image"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "intro_message" : {
+            "type" : "Slice",
+            "fieldset" : "Intro Message",
+            "description" : "Intro text block",
+            "icon" : "short_text",
+            "display" : "list",
+            "non-repeat" : {
+              "text_block" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph, heading2, heading3, strong, em, hyperlink",
+                  "label" : "text block",
+                  "placeholder" : "Intro message"
+                }
+              },
+              "intro_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Intro Image"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "full_screen_section" : {
+            "type" : "Slice",
+            "fieldset" : "Full Screen Section",
+            "description" : "Text with color overlay over full screen image",
+            "icon" : "add_to_queue",
+            "display" : "list",
+            "non-repeat" : {
+              "full_screen_title" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "single" : "heading1, heading2, heading3, heading4, heading5, heading6",
+                  "label" : "Full Screen Title",
+                  "placeholder" : "Optional"
+                }
+              },
+              "full_screen_text" : {
+                "type" : "StructuredText",
+                "config" : {
+                  "multi" : "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, rtl",
+                  "label" : "Full Screen Text",
+                  "placeholder" : "Full Screen Body text"
+                }
+              },
+              "full_screen_image" : {
+                "type" : "Image",
+                "config" : {
+                  "constraint" : { },
+                  "thumbnails" : [ ],
+                  "label" : "Full Screen Image"
+                }
+              },
+              "full_screen_layout" : {
+                "type" : "Select",
+                "config" : {
+                  "options" : [ "text-left", "text-right", "text-bottom", "text-top", "text-center" ],
+                  "label" : "Full Screen Layout",
+                  "placeholder" : "Select layout of section"
+                }
+              }
+            },
+            "repeat" : { }
+          }
+        }
+      }
+    }
+  },
+  "SEO" : {
+    "seo_page_title" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO Page Title",
+        "placeholder" : "SEO Page Title"
+      }
+    },
+    "seo_meta_description" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "SEO Meta Description",
+        "placeholder" : "SEO Meta Description"
+      }
+    }
+  }
+}

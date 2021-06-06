@@ -2,18 +2,10 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { motion } from "framer-motion"
 
-
 import Layout from "../components/layout"
 import Navbar from "../components/navbar"
-import Hero from "../components/hero"
-import Image from 'gatsby-image'
-import ContentTextPict from "../components/content-text-pict.js"
 
 import FullScreenSection from "../components/fullscreen-section"
-import SectionOneImage from "../images/DSC0090.jpg"
-import SectionTwoImage from "../images/DSC0126.jpg"
-import SectionThreeImage from "../images/DSC0095.jpg"
-import SectionFourImage from "../images/DSC-0260.jpg"
 import Payment from '../components/payment'
 import HeroSection from "../components/hero-section"
 import FullscreenImage from "../components/fullscreen-image"
@@ -22,11 +14,41 @@ import HeroLogo from "../components/hero-logo"
 import ScrollArrow from "../components/scroll-arrow"
 
 
-const IndexPage = ({data}) => (
+const IndexPage = ({data}) => {
+
+
+  const document = data.allPrismicHomepage.nodes[0].data
+
+  const seoTitle = document.seo_page_title
+  const seoDescription = document.seo_meta_description
+
+  const heroContent = document.body[0].primary.hero_content
+  const heroImage = document.body[0].primary.hero_background_image.url
+  const heroImageAlt = document.body[0].primary.hero_background_image.alt
+
+  const sectionTwoText = document.body[1].primary.full_screen_text[0].text
+  const sectionTwoImage = document.body[1].primary.full_screen_image.url
+  const sectionTwoImageAlt = document.body[1].primary.full_screen_image.alt
+
+  const sectionThreeText = document.body[2].primary.full_screen_text[0].text
+  const sectionThreeImage = document.body[2].primary.full_screen_image.url
+  const sectionThreeImageAlt = document.body[2].primary.full_screen_image.alt
+
+  const sectionFourText = document.body[3].primary.full_screen_text[0].text
+  const sectionFourImage = document.body[3].primary.full_screen_image.url
+  const sectionFourImageAlt = document.body[3].primary.full_screen_image.alt
+
+  const sectionFiveText = document.body[4].primary.full_screen_text[0].text
+  const sectionFiveImage = document.body[4].primary.full_screen_image.url
+  const sectionFiveImageAlt = document.body[4].primary.full_screen_image.alt
+
+
+return (
+
   <Layout>
     <SEO 
-      title="Welcome to Hulse Dental of Onalaska WI"
-      description="Learn more about Hulse Dental, our services, our office and Dr. Kurt Hulse."  
+      title={seoTitle}
+      description={seoDescription} 
     />
 
     <Navbar transparent/>
@@ -42,59 +64,63 @@ const IndexPage = ({data}) => (
                 transition={{duration:1, delay:1}}
                 className="self-center text-gray-400 text-2xl text-center"
               >
-                Welcome to Hulse Dental, Onalaska Wisconsin
+                {heroContent}
               </motion.h3>
               <motion.div
                 animate={{opacity:1}}
                 initial={{opacity:0}}
                 transition={{duration:1, delay:1.25}}
               >
-                <ScrollArrow destination="#section-2" />
+                <ScrollArrow destination="#section-2" destinationName="Introduction" />
               </motion.div>
             </div>
             
         </div>     
         <FullscreenImage>
-          <Image fluid={data.heroImage.childImageSharp.fluid} className="object-fill object-center h-screen" alt="Hulse Dental Interior"/>
+          <img src={heroImage} alt={heroImageAlt} />
         </FullscreenImage>
       </div>
     </HeroSection>
 
-    <a id="section-2"  />
+    <a id="section-2"  aria-label={sectionTwoImageAlt}/>
     <FullScreenSection
-      bgImage={SectionOneImage}
+      bgImage={sectionTwoImage}
+      imgAlt={sectionTwoImageAlt}
       layoutType="fs-centerBottom"
       className="flex"
     >
-      Hulse Dental is Onalaska’s choice for dental care, providing state-of-the-art family dentistry and cosmetic dentistry services by Dentist Kurt Hulse.
-      <ScrollArrow destination="#section-3" />  
+      {sectionTwoText}
+      <ScrollArrow destination="#section-3" destinationName="About Hulse Dental" />  
     </FullScreenSection>
     
 
-    <a id="section-3"></a>
+    <a id="section-3" aria-label={sectionTwoImageAlt} />
     <FullScreenSection
-      bgImage={SectionTwoImage}
+      bgImage={sectionThreeImage}
+      imgAlt={sectionThreeImageAlt}
       layoutType="fs-right"
     >
-      We are glad you are taking the time to learn more about us and our dental care and services. Our goal is to make sure that you’re comfortable and receive the best care possible throughout your dental visit. We offer pleasant surroundings with state-of-the-art technology along with other amenities to provide a relaxed yet professional family dental environment to improve and maintain your oral health. From the moment you enter our dental office, you are treated with courtesy and respect in a warm, friendly setting where your comfort is a top priority. We are fortunate to be easily accessible from the Onalaska, La Crosse, Holmen, West Salem and other coulee region areas.
-      <ScrollArrow destination="#section-4" />  
+      {sectionThreeText}
+      <ScrollArrow destination="#section-4" destinationName="Hulse Dental Team & Services"/>  
     </FullScreenSection>
       
-    <a id="section-4"></a>  
+    <a id="section-4" aria-label={sectionTwoImageAlt}></a>  
     <FullScreenSection
-      bgImage={SectionThreeImage}
+      bgImage={sectionFourImage}
+      imgAlt={sectionFourImageAlt}
       layoutType="fs-left"
     >
-      Whether you come to our office for a routine check-up, cleaning &amp; dental care, restorative dentistry, dental implants, teeth whitening, cosmetic dentistry, or any other specialty service, we all are focused on providing you with a visit to the dentist that is smooth and pleasant, and that your dental care is designed specifically to meet your unique needs and goals. Our team of professionals is proud of the care they provide and the exceptional service they deliver to our patients and community.
-      <ScrollArrow destination="#section-5" /> 
+      {sectionFourText}
+      <ScrollArrow destination="#section-5" destinationName="Hulse Dental technologies and expertise"/> 
     </FullScreenSection>
 
-    <a id="section-5"></a>  
+    <a id="section-5" aria-label={sectionTwoImageAlt}></a>  
     <FullScreenSection
-      bgImage={SectionFourImage}
+      bgImage={sectionFiveImage}
+      imgAlt={sectionFiveImageAlt}
       layoutType="container-center-content"
     >
-      Hulse Dental’s expertise and state-of-the-art technologies allows us to offer preventative, restorative and orthodontic services all in-house.
+      {sectionFiveText}
       <div>
       <Link to="/services">
         <button className="bg-gray-500 text-white py-4 px-8 text-base font-light m-8 hover:bg-gray-700">
@@ -106,40 +132,43 @@ const IndexPage = ({data}) => (
 
     <Payment />
   </Layout>
-)
+  )
+}
 
 export default IndexPage
 
 
-export const indexImages = graphql`
-  fragment indexImage on File {
-    childImageSharp {
-      fluid {
-        ...GatsbyImageSharpFluid_noBase64
+
+export const query = graphql`
+query {
+  allPrismicHomepage {
+    nodes {
+      data {
+        body {
+          primary {
+            hero_content
+            hero_background_image {
+              url
+            }
+            full_screen_layout
+            full_screen_text {
+              text
+            }
+            full_screen_title {
+              text
+            }
+            
+            full_screen_image {
+              url
+              alt
+            }
+          }
+        }
+        seo_meta_description
+        seo_page_title
       }
     }
   }
-`
-
-export const query = graphql`
-  query {
-    heroImage: file(relativePath: { eq: "DSC0104.jpg" }) {
-      ...indexImage
-    }
-    section1: file(relativePath: { eq: "DSC0090.jpg" }) {
-      ...indexImage
-    }
-    section2: file(relativePath: { eq: "DSC0095.jpg" }) {
-      ...indexImage
-    }
-    section3: file(relativePath: { eq: "DSC0126.jpg" }) {
-      ...indexImage
-    }
-    section4: file(relativePath: { eq: "DSC-0260.jpg" }) {
-      ...indexImage
-    }
-
-
-  }
+}
 `
 

@@ -1,14 +1,14 @@
 import React from 'react'
 // import HeroImage from "../images/DSC0090.jpg"
 
-const FsContentBottom = ({children, heroImage}) => {
+const FsContentBottom = ({children, heroImage, imageAlt}) => {
 
     return (
         <div className="relative pt-16 flex content-bottom items-end justify-center bg-black"
             style={{
               minHeight: "100vh",
             }}>
-          <div className="absolute top-0 w-full h-full bg-center bg-cover bg-black"
+          <div className="absolute top-0 w-full h-full bg-center bg-cover bg-black" role="img" arial-label={imageAlt}
               style={{
                 backgroundColor:"#000000",
                 backgroundImage: `url(${heroImage})`

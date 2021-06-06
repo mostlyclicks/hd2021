@@ -19,6 +19,7 @@ module.exports = {
         linkResolver: ({ node, key, value }) => page => `/${page.uid}`,
         schemas: {
          page: require("./custom_types/page.json"),
+         homePage: require("./custom_types/home-page.json")
         },
       },
     },
