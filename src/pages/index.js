@@ -77,7 +77,7 @@ return (
             
         </div>     
         <FullscreenImage>
-          <img src={heroImage} alt={heroImageAlt} className="object-fill object-center h-screen" />
+          <img src={heroImage} alt={heroImageAlt} className="object-fill object-center h-screen w-screen " />
         </FullscreenImage>
       </div>
     </HeroSection>
