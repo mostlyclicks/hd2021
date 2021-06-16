@@ -11,13 +11,13 @@ import StaffSarah from "../images/Staff-SarahPic2.jpg"
 import StaffTara from "../images/Staff-TaraPic2b.jpg"
 import StaffKate from "../images/Staff-Kate.jpg"
 
- 
+  
 
 const Staff = () => {
 
   return (
     <div className=" staff my-18">
-        <h3 className="text-center">Our Staff</h3>
+        <h3 className="text-center">Meet Our Team</h3>
         <div className="flex flex-wrap sm:container md:container lg:container mx-auto py-20">
         
         <StaffComponent 

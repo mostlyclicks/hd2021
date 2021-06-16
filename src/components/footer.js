@@ -26,7 +26,7 @@ const Footer = () => {
                 HULSE DENTAL<br/>
                 1840 EAST MAIN STREET<br/>
                 ONALASKA, WI 54650<br/>
-                (608) 783-1306<br/>
+                <a href="tel:608-783-1306">(608) 783-1306</a><br/>
                 <a href="mailto:kurthulsedental@gmail.com">KURTHULSEDENTAL@GMAIL.COM</a><br />
                
 
@@ -83,5 +83,3 @@ const Footer = () => {
 
 export default Footer
 
-// https://www.instagram.com/hulse_dental/
-// https://www.facebook.com/hulsedental

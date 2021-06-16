@@ -37,7 +37,10 @@ const DrKurtHulse = ({data}) => {
 
             <section className="md:flex md:container md:flex-col lg:flex-row mx-auto p-dark border-t">
                 <div className=" justify-center mt-7 pr-6 md:w-full lg:w-1/3">
+                <figure className="text-center ">
                     <img src={KurtHulse} alt="Kurt Hulse"  /> 
+                    <figcaption className="pt-4">Dr. Kurt Hulse</figcaption>
+                </figure>
                 </div>
                 <div className="pb-6 p-6  text-base lg:w-1/3">
                 <h3 className="text-lg">Education</h3>
