@@ -31,39 +31,42 @@ const DrKurtHulse = ({data}) => {
             <Navbar transparent />
             <HeroLevel2 title="Our Team" image={HeroImage} minHeight="100vh" className="bm-10"/>
             <a id="section-2"></a>
-            <FSTextBlock lgContainer customClasses="md:mt-16">
-                <RichText render={mainText.raw} />
-            </FSTextBlock>
 
             <section className="md:flex md:container md:flex-col lg:flex-row mx-auto p-dark border-t">
-                <div className=" justify-center mt-7 pr-6 md:w-full lg:w-1/3">
-                <figure className="text-center ">
-                    <img src={KurtHulse} alt="Kurt Hulse"  /> 
-                    <figcaption className="pt-4">Dr. Kurt Hulse</figcaption>
-                </figure>
+                <div className=" justify-center pr-6 md:w-full lg:w-1/3">
+                    <figure className="text-center ">
+                        <img src={KurtHulse} alt="Kurt Hulse"  /> 
+                        <figcaption className="p-4">Dr. Kurt Hulse</figcaption>
+                    </figure>
                 </div>
-                <div className="pb-6 p-6  text-base lg:w-1/3">
-                <h3 className="text-lg">Education</h3>
-                <ul className="list-outside list-disc ml-4">
-                    <li>Onalaska High School - Onalaska WI</li>
-                    <li>Luther College, Decorah IA 1986 - B.A. in Biology, Minor in Chemistry</li>
-                    <li>University of Minnesota Dental School 1990 - Doctor of Dental Surgery</li>
-                    <li>United States Navy General Practice Residency 1990-1993- Balboa Naval Hospital, San Diego CA</li>
-                    <li>University of Minnesota Dental School 1993-2000 - Clinical Instructor</li>
-                </ul>
-                </div>
-                <div className="p-6  text-base lg:w-1/3">
-                    <h3 className="text-lg">Professional Associations</h3>
+                <div className="lg:w-2/3">
+                    <p className="text-base lg:text-xl">{mainText.text}</p>
+                    <div className="flex">
+                    <div className="pb-6 pr-6  text-base w-screen lg:w-1/2">
+                    <h3 className="text-lg">Education</h3>
                     <ul className="list-outside list-disc ml-4">
-                    <li>President, La Crosse District Dental Society</li>
-                    <li>Wisconsin Dental Association</li>
-                    <li>American Academy of Cosmetic Dentistry</li>
-                    <li>American Academy of Operative Dentistry</li>
-                    <li>Director, ADA "Give Kids a Smile" program</li>
+                        <li>Onalaska High School - Onalaska WI</li>
+                        <li>Luther College, Decorah IA 1986 - B.A. in Biology, Minor in Chemistry</li>
+                        <li>University of Minnesota Dental School 1990 - Doctor of Dental Surgery</li>
+                        <li>United States Navy General Practice Residency 1990-1993- Balboa Naval Hospital, San Diego CA</li>
+                        <li>University of Minnesota Dental School 1993-2000 - Clinical Instructor</li>
                     </ul>
                 </div>
-
+                <div className=" text-base w-screen lg:w-1/2">
+                    <h3 className="text-lg">Professional Associations</h3>
+                    <ul className="list-outside list-disc ml-4">
+                        <li>President, La Crosse District Dental Society</li>
+                        <li>Wisconsin Dental Association</li>
+                        <li>American Academy of Cosmetic Dentistry</li>
+                        <li>American Academy of Operative Dentistry</li>
+                        <li>Director, ADA "Give Kids a Smile" program</li>
+                    </ul>
+                 </div>
+                 </div>
+                </div>
             </section>
+
+           
 
             <Staff />
 
@@ -110,6 +113,7 @@ query {
             primary {
               text {
                 raw
+                text
               }
             }
           }
