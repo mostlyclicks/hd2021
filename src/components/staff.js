@@ -13,12 +13,24 @@ import StaffKate from "../images/Staff-Kate.jpg"
 
   
 
-const Staff = () => {
+const Staff = (props) => {
+
+  const allStaff = props.allStaff
 
   return (
     <div className=" staff my-18">
         <h3 className="text-center">Meet Our Team</h3>
         <div className="flex flex-wrap sm:container md:container lg:container mx-auto py-20">
+
+
+        {allStaff.edges.map((staff) => {
+
+          return (
+            <p>{staff.node.dataRaw.first_name[0].text}</p>
+          )
+        })}
+
+
         
         <StaffComponent 
           name="Jane - Office Manager" 

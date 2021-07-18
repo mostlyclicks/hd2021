@@ -69,8 +69,8 @@ const DrKurtHulse = ({data}) => {
             </section>
 
            
-            <div>{allStaff.totalCount} gsdf</div>
-            <Staff />
+            <div>{allStaff.totalCount}</div>
+            <Staff allStaff={allStaff} />
 
             <FSTextBlock>
             <hr/>
@@ -123,28 +123,16 @@ query {
       }
     }
   }
-    allPrismicStaffMember {
+  allPrismicStaffMember {
+    totalCount
     edges {
       node {
-        data {
-          first_name {
-            html
-            raw
-            text
-          }
-          job_title {
-            text
-          }
-          staff_image {
-            fluid {
-              srcSet
-            }
-          }
-        }
+        id
+        dataRaw
       }
     }
-    totalCount
   }
+  
 }
 
 `
