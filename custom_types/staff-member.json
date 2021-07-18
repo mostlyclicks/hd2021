@@ -1,0 +1,36 @@
+{
+  "Main" : {
+    "first_name" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading3",
+        "label" : "First Name",
+        "placeholder" : "First Name"
+      }
+    },
+    "job_title" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "Job Title",
+        "placeholder" : "Job Title"
+      }
+    },
+    "about" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "About",
+        "placeholder" : "About - Staff Quote"
+      }
+    },
+    "staff_image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : { },
+        "thumbnails" : [ ],
+        "label" : "Staff Image"
+      }
+    }
+  }
+}

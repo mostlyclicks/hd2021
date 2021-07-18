@@ -19,7 +19,9 @@ const DrKurtHulse = ({data}) => {
     const seoDescription = document.seo_meta_description
 
     const mainText = document.body[0].primary.text
-    console.log(mainText)
+    
+    const allStaff = data.allPrismicStaffMember
+    
 
 
     return (
@@ -67,7 +69,7 @@ const DrKurtHulse = ({data}) => {
             </section>
 
            
-
+            <div>{allStaff.totalCount} gsdf</div>
             <Staff />
 
             <FSTextBlock>
@@ -120,6 +122,28 @@ query {
         }
       }
     }
+  }
+    allPrismicStaffMember {
+    edges {
+      node {
+        data {
+          first_name {
+            html
+            raw
+            text
+          }
+          job_title {
+            text
+          }
+          staff_image {
+            fluid {
+              srcSet
+            }
+          }
+        }
+      }
+    }
+    totalCount
   }
 }
 
