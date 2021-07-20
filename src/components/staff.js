@@ -24,14 +24,24 @@ const Staff = (props) => {
 
 
         {allStaff.edges.map((staff) => {
+            const firstName = staff.node.dataRaw.first_name[0].text
+            const staffImage = staff.node.dataRaw.staff_image.url
+            const description = staff.node.dataRaw.about[0].text
+            // const bgColor = staff.node.dataRaw.staff_image.copyright
+            const bgColor = "#bfab86"
 
           return (
-            <p>{staff.node.dataRaw.first_name[0].text}</p>
+            <StaffComponent 
+              name={firstName}
+              image={staffImage}
+              bgColor={bgColor}
+              description={description}
+            />
           )
         })}
 
 
-        
+        {/* 
         <StaffComponent 
           name="Jane - Office Manager" 
           image={StaffJane} 
@@ -87,7 +97,8 @@ const Staff = (props) => {
           bgColor="#90887b"
           description="I enjoy learning new things about the dental field daily and the relationships I get to build with the patients. I came from a completely different career and the change to dental care has been wonderful!"
         />
-
+        
+        */}
         </div>
     </div>
 

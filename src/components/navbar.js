@@ -36,9 +36,9 @@ export default function Navbar(props) {
           <Link to="/our-team" className="block mt-4 lg:inline-block lg:mt-0 text-white lg:p-4">
             Our Team
           </Link>
-          <Link to="/articles" className="block mt-4 lg:inline-block lg:mt-0 text-white lg:p-4">
+          <a href="/articles" className="block mt-4 lg:inline-block lg:mt-0 text-white lg:p-4">
             Articles
-          </Link>
+          </a>
           <Link to="/contact-us" className="block mt-4 lg:inline-block lg:mt-0 text-white lg:p-4">
             Contact Us
           </Link>
