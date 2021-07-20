@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import { Link } from 'gatsby-plugin-modal-routing'
 import { RichText } from "prismic-reactjs"
 import Layout from "../components/layout"
