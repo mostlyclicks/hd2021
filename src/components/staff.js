@@ -20,15 +20,16 @@ const Staff = (props) => {
   return (
     <div className=" staff my-18">
         <h3 className="text-center">Meet Our Team</h3>
-        <div className="flex flex-wrap sm:container md:container lg:container mx-auto py-20">
+        <div className="flex flex-wrap mx-auto" style={{maxWidth:'1024px'}}>
+        {/*  flex flex-wrap mx-auto py-20 lg:container max-w-screen-lg */}
 
 
         {allStaff.edges.map((staff) => {
             const firstName = staff.node.dataRaw.first_name[0].text
             const staffImage = staff.node.dataRaw.staff_image.url
             const description = staff.node.dataRaw.about[0].text
-            // const bgColor = staff.node.dataRaw.staff_image.copyright
-            const bgColor = "#bfab86"
+            const bgColor = staff.node.dataRaw.staff_image.copyright || "#bfab86"
+            // const bgColor = "#bfab86"
 
           return (
             <StaffComponent 
