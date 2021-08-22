@@ -7,6 +7,7 @@ import { RichText } from "prismic-reactjs"
 import HeroLevel2 from '../components/hero-level-2'
 import HeroImage from '../images/DSC-0260.jpg'
 import KurtHulse from '../images/Staff-Kurt-Hulse.jpg'
+import ZachCase from '../images/Zachary-Case.jpg'
 import Payment from '../components/payment'
 import FSTextBlock from "../components/content-fs-text-block"
 import Staff from "../components/staff"
@@ -36,7 +37,6 @@ const DrKurtHulse = ({data}) => {
             <a id="section-2"></a>
 
             <section className="md:flex md:container md:flex-col lg:flex-row mx-auto p-dark border-t " style={{maxWidth:'1024px'}}>
-
               <div className=" justify-center flex flex-col md:flex-row">
                   <div className="w-full md:w-1/2">
                     <figure className="text-center ">
@@ -45,7 +45,7 @@ const DrKurtHulse = ({data}) => {
                     </figure>
                   </div>
                   <div className="w-full md:w-1/2">
-                    <p className="text-base lg:text-xl">{mainText.text}</p>
+                    <p className="text-base lg:text-l">{mainText.text}</p>
                   </div>
               </div>
             </section>
@@ -73,12 +73,28 @@ const DrKurtHulse = ({data}) => {
                         <li>American Academy of Operative Dentistry</li>
                         <li>Director, ADA "Give Kids a Smile" program</li>
                     </ul>
-                  
                   </div>
-              
               </div>
-            
             </section>
+
+            <section className="md:flex md:container md:flex-col lg:flex-row mx-auto p-12 md:p-10 pb-20 pt-20" style={{maxWidth:'1024px'}}>
+              <div className=" justify-center flex flex-col md:flex-row">
+                  <div className="w-full md:w-1/2">
+                    <figure className="text-center ">
+                        <img src={ZachCase} alt="Zachary Case" className="md:pr-12" /> 
+                        <figcaption className="p-4">Dr. Zachary Case</figcaption>
+                    </figure>
+                  </div>
+                  <div className="w-full md:w-1/2">
+                    <p className="text-base lg:text-l text-gray-500">Dr. Case became well acquainted with the coulee region while in college at the University of Wisconsin La Crosse where he studied biology and chemistry. Originally from Harmony, MN, Dr. Case elected to complete his dental education away from the area and attend Creighton University in Omaha, Nebraska. While there, he enjoyed spending his free time attending Creighton basketball games and running the trails along the Missouri River.  Following his graduation, he was happy to come back to the Coulee Region which he had called home during his college years. Dr. Case is an active member of the American Dental Association, the Wisconsin Dental Association and the La Crosse Dental Association.</p>
+<p className="text-gray-500">He loves his roots in Harmony and also enjoys spending his free time with friends and family, enjoying sports, and staying healthy physically.  Dr. Case is a through and through Minnesota sports fan and he will gladly welcome any criticism that comes along with it.  Dr. Case has a strong passion for delivering high quality care to his patients and is looking forward to continued growth at Hulse Dental in Onalaska.</p>
+                  </div>
+              </div>
+            </section>
+
+            
+
+
 
            
             
