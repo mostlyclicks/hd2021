@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Footer from "./footer"
+import BackToTop from "./back-to-top"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -16,7 +17,10 @@ const Layout = ({ children }) => {
   return (
      
     <div>
-      <main>{children}</main>
+      <main>{children}
+        <BackToTop />
+      </main>
+      
       <Footer />
     </div>
     
