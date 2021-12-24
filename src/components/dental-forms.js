@@ -5,8 +5,7 @@ const DentalForms = () => {
   return (
       
     <ul>
-      <li><a href="New-Patient-Registration-page1.pdf">New Patient Form Page One</a></li>
-      <li><a href="New-Patient-Registration-page2.pdf">New Patient Form Page Two</a></li>
+      <li><a href="New-Patient-Registration-full.pdf">New Patient Form</a></li>
       <li><a href="https://hd10.s3.amazonaws.com/Forms/Medical-History-update.pdf">Medical History</a></li>
       <li><a href="HIPAA.pdf">Health Information Consent and Use Form</a></li>
       <li><a href="HD-Financial-Policy.pdf">Financial Policy</a></li>
