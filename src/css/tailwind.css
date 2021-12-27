@@ -5,6 +5,10 @@
 /* html, body {background-color:#D8D9DD;}
 html, body {background-color:red;} */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
 }

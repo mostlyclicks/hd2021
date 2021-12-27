@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import HeroLogo from "../components/hero-logo"
 import ScrollArrow from "../components/scroll-arrow"
 
-const HeroLevel2 = ({title, image, minHeight}) => {
+const HeroLevel2 = ({title, image, minHeight, children}) => {
 
     return (
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -46,7 +46,9 @@ const HeroLevel2 = ({title, image, minHeight}) => {
                       transition={{duration:1, delay:1.25}}
                     >
                       <ScrollArrow destination="#section-2" />
+                      {children}
                     </motion.div>
+                    
                   </div>
                 </div>
 

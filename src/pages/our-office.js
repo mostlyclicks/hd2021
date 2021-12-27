@@ -11,6 +11,7 @@ import FSTextBlock from "../components/content-fs-text-block"
 import ContentTextPict from "../components/content-text-pict"
 import Payment from '../components/payment'
 import DentalForms from '../components/dental-forms'
+import { FaFileAlt } from 'react-icons/fa'
 
 
 
@@ -54,7 +55,10 @@ const OurOffice = ({data}) => {
             description={seoDescription}
          />
         <Navbar transparent />
-            <HeroLevel2 title={heroTitle} image={heroImage} minHeight="100vh" />
+            <HeroLevel2 title={heroTitle} image={heroImage} minHeight="100vh">
+              
+              <p className=""><a href="#online-forms" className="text-gray-50 uppercase font-bold hover:text-indigo-400"><FaFileAlt className="text-5xl mb-4 text-white mx-auto my-8 hover:text-indigo-400" />Online Forms</a></p>
+            </HeroLevel2>
                 
             <a id="section-2"></a>
             <FSTextBlock bgColor="bg-gray-600" textColor="p-light">
@@ -85,7 +89,7 @@ const OurOffice = ({data}) => {
             </ContentTextPict>
 
             <ContentTextPict image={sectionThreeImg}>
-                <h3>{sectionThreeTitle}</h3>
+                <h3 id="online-forms">{sectionThreeTitle}</h3>
                 <RichText render={sectionThreeText} />
             </ContentTextPict>
 
