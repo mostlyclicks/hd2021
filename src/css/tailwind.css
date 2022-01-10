@@ -53,6 +53,9 @@ p {
     @apply pb-6
 }
 
+.width-150 {
+    width:150px;
+}
 /* table, td, tr {
     @apply divide-y-0 divide-light-blue-50
 } */

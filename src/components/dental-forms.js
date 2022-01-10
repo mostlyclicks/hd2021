@@ -5,19 +5,24 @@ const DentalForms = () => {
 
   return (
       
-    <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-      <li className="text-base rounded-lg block border-2 p-4 flex flex-1 sm:flex-col items-center">
-        <FaFilePdf className="text-7xl mb-4"/>
-      <a href={'/New-Patient-Registration-full.pdf'} className="text-center">New Patient Form</a></li>
+    <ul className="flex flex-wrap gap-4 flex-col">
+      <li className="text-base font-bold flex gap-2 items-center">
+        <FaFilePdf className="text-4xl mb-4 pt-1"/>
+        <a href={'/PT-New-Patient-Registration-page-1.pdf'} className="text-center underline decoration-1" download="New-Patient-Form-Page-1">New Patient Form 1</a>
+      </li>
+      <li className="text-base flex gap-2 font-bold items-center">
+        <FaFilePdf className="text-4xl mb-4 pt-1"/>
+        <a href={'/PT-New-Patient-Registration-page-2.pdf'} className="text-center underline decoration-1" download="New-Patient-Form-Page-2">New Patient Form 2</a>
+      </li>
 
-      <li className="text-base rounded-lg block border-2 p-4 flex flex-1  sm:flex-col items-center">
-      <FaFilePdf className="text-7xl mb-4"/><a href="https://hd10.s3.amazonaws.com/Forms/Medical-History-update.pdf" className="text-center">Medical History Update</a></li>
+      <li className="text-base flex gap-2 font-bold items-center">
+      <FaFilePdf className="text-4xl mb-4 pt-1"/><a href="/PT-Medical-History-update.pdf" className="text-center underline decoration-1" download="Medical-History-Update-Form">Medical History Update</a></li>
 
-      <li className="text-base rounded-lg block border-2 p-4 flex flex-1 sm:flex-col items-center">
-      <FaFilePdf className="text-7xl mb-4"/><a href={'/HIPAA.pdf'} className="text-center">Health Information Consent and Use Form</a></li>
+      <li className="text-base flex gap-2 font-bold items-center">
+      <FaFilePdf className="text-4xl mb-4 pt-1"/><a href={'/PT-Release-form-to-us.pdf'} className="text-center underline decoration-1" download="Health-Information-Consent-Form">Health Information Consent and Use Form</a></li>
 
-      <li className="text-base rounded-lg block border-2 p-4 flex flex-1 sm:flex-col items-center">
-      <FaFilePdf className="text-7xl mb-4"/><a href={'/HD-Financial-Policy-full.pdf'} className="text-center">Financial Policy</a></li>
+      <li className="text-base flex gap-2 font-bold items-center">
+      <FaFilePdf className="text-4xl mb-4 pt-1"/><a href={'/HD-Financial-Policy-full.pdf'} className="text-center underline decoration-1" download="Financial Policy">Financial Policy</a></li>
     </ul>
   )
 }
