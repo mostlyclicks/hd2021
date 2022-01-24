@@ -53,7 +53,7 @@ const DentalForms = () => {
         <a
           href={"/HIPAA.pdf"}
           className="text-center underline decoration-1"
-          download="Healt-Information-Consent-and-Use-Form-HIPAA"
+          download="Health-Information-Consent-and-Use-Form-HIPAA"
         >
           Health Information Consent and Use Form (HIPPA)
         </a>
