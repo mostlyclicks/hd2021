@@ -46,7 +46,7 @@ const ServicesPrismic = ({data}) => {
         <SEO title={seoTitle} description={seoDescription} />
         <Navbar transparent />
         <HeroLevel2 title={heroTitle} image={heroImage} minHeight="100vh" />
-
+        {/* 
         <iframe
           src="https://reviews.solutionreach.com/vs/reviews/hulse_dental1?limit=50"
           style={{ border: "0" }}
@@ -55,6 +55,7 @@ const ServicesPrismic = ({data}) => {
           frameborder="0"
           scrolling="yes"
         ></iframe>
+        */}
 
         <a id="section-2"></a>
         <ContentTextPict image={sectionOneImage} alt={sectionOneImageAlt}>
