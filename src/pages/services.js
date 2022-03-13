@@ -42,40 +42,53 @@ const ServicesPrismic = ({data}) => {
   
   
     return (
-        <Layout>
-        <SEO 
-            title={seoTitle}
-            description={seoDescription}
-        />
+      <Layout>
+        <SEO title={seoTitle} description={seoDescription} />
         <Navbar transparent />
-            <HeroLevel2 title={heroTitle} image={heroImage} minHeight="100vh" />
+        <HeroLevel2 title={heroTitle} image={heroImage} minHeight="100vh" />
 
-            <a id="section-2"></a>
-            <ContentTextPict image={sectionOneImage} alt={sectionOneImageAlt}>
-                <h3>{sectionOneTitle}</h3> 
-                <RichText render={sectionOneText.raw} />
-            </ContentTextPict>
+        <iframe
+          src="https://reviews.solutionreach.com/vs/reviews/hulse_dental1?limit=50"
+          style={{ border: "0" }}
+          width="475"
+          height="200"
+          frameborder="0"
+          scrolling="yes"
+        ></iframe>
 
-            <FullScreenSection
-                bgImage={sectionTwoImage}
-                layoutType="fs-left"
-            >
-                <h3>{sectionTwoTitle}</h3>
-                <RichText render={sectionTwoText.raw} />
-            </FullScreenSection>
+        <a id="section-2"></a>
+        <ContentTextPict image={sectionOneImage} alt={sectionOneImageAlt}>
+          <h3>{sectionOneTitle}</h3>
+          <RichText render={sectionOneText.raw} />
+        </ContentTextPict>
 
-            <ContentTextPict image={sectionThreeImage} alt={sectionThreeImageAlt} positionOne lgContainer>
-                <h3>{sectionThreeTitle}</h3>
-                <RichText render={sectionThreeText.raw} />
-            </ContentTextPict>
+        <FullScreenSection bgImage={sectionTwoImage} layoutType="fs-left">
+          <h3>{sectionTwoTitle}</h3>
+          <RichText render={sectionTwoText.raw} />
+        </FullScreenSection>
 
-            <ContentTextPict image={sectionFourImage} alt={sectionFourImageAlt} reversed lgContainer>
-                <h3>{sectionFourTitle}</h3>
-                <RichText render={sectionFourText.raw} />
-            </ContentTextPict>
+        <ContentTextPict
+          image={sectionThreeImage}
+          alt={sectionThreeImageAlt}
+          positionOne
+          lgContainer
+        >
+          <h3>{sectionThreeTitle}</h3>
+          <RichText render={sectionThreeText.raw} />
+        </ContentTextPict>
 
-            <Payment />
-        </Layout>
+        <ContentTextPict
+          image={sectionFourImage}
+          alt={sectionFourImageAlt}
+          reversed
+          lgContainer
+        >
+          <h3>{sectionFourTitle}</h3>
+          <RichText render={sectionFourText.raw} />
+        </ContentTextPict>
+
+        <Payment />
+      </Layout>
     )
 }
 
