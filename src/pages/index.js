@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 
 import Layout from "../components/layout"
 import Navbar from "../components/navbar"
+import Reviews from "../components/reviews"
 
 import FullScreenSection from "../components/fullscreen-section"
 import Payment from '../components/payment'
@@ -129,7 +130,7 @@ return (
       </Link>
       </div>
     </FullScreenSection> 
-
+    <Reviews />
     <Payment />
   </Layout>
   )

@@ -9,6 +9,7 @@ import HeroLevel2 from "../components/hero-level-2"
 import ContentTextPict from "../components/content-text-pict"
 import Payment from "../components/payment"
 import FullScreenSection from '../components/fullscreen-section'
+import Reviews from '../components/reviews'
 
 const ServicesPrismic = ({data}) => {
 
@@ -46,16 +47,7 @@ const ServicesPrismic = ({data}) => {
         <SEO title={seoTitle} description={seoDescription} />
         <Navbar transparent />
         <HeroLevel2 title={heroTitle} image={heroImage} minHeight="100vh" />
-        {/* 
-        <iframe
-          src="https://reviews.solutionreach.com/vs/reviews/hulse_dental1?limit=50"
-          style={{ border: "0" }}
-          width="475"
-          height="200"
-          frameborder="0"
-          scrolling="yes"
-        ></iframe>
-        */}
+        <Reviews />
 
         <a id="section-2"></a>
         <ContentTextPict image={sectionOneImage} alt={sectionOneImageAlt}>

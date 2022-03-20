@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { RichText } from "prismic-reactjs"
 import Layout from '../components/layout'
+import Reviews from "../components/reviews"
 import SEO from "../components/seo"
 import Navbar from "../components/navbar"
 import HeroLevel2 from "../components/hero-level-2"
@@ -36,6 +37,9 @@ const OurTeam = ({data}) => {
         minHeight="100vh"
         className="bm-10"
       />
+
+      <Reviews />
+
       <section
         className="md:flex md:container md:flex-col lg:flex-row mx-auto p-dark border-t "
         style={{ maxWidth: "1024px" }}

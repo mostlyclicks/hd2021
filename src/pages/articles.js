@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Reviews from "../components/reviews"
 import HeroLevel2 from '../components/hero-level-2'
 import HeroImage from "../images/reception_home_2.jpg"
 
@@ -16,6 +17,7 @@ const News = () => {
       />
       <HeroLevel2 title="News & Articles" image={HeroImage} minHeight="20vh"/>
       <Navbar transparent />
+      
       <div style={{minHeight:'80vh'}}>
        {/*<!-- BEGIN Vivial content widget -->*/}
           <div id="lvsc3a6e093d">

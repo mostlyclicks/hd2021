@@ -12,6 +12,7 @@ import ContentTextPict from "../components/content-text-pict"
 import Payment from '../components/payment'
 import DentalForms from '../components/dental-forms'
 import { FaFileAlt } from 'react-icons/fa'
+import Reviews from "../components/reviews"
 
 
 
@@ -59,6 +60,8 @@ const OurOffice = ({data}) => {
               
               <p className=""><a href="#online-forms" className="text-gray-50 uppercase font-bold hover:text-indigo-400"><FaFileAlt className="text-5xl mb-4 text-white mx-auto my-8 hover:text-indigo-400" />Online Forms</a></p>
             </HeroLevel2>
+
+            <Reviews />            
                 
             <a id="section-2"></a>
             <FSTextBlock bgColor="bg-gray-600" textColor="p-light">
