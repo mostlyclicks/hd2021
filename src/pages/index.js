@@ -45,45 +45,47 @@ const IndexPage = ({data}) => {
 
 
 return (
-
   <Layout>
-    <SEO 
-      title={seoTitle}
-      description={seoDescription} 
-    />
+    <SEO title={seoTitle} description={seoDescription} />
 
-    <Navbar transparent/>
+    <Navbar transparent />
 
     <HeroSection title="Home">
       <div className="relative min-h-screen w-full h-full bg-gray-500">
         <div className="relative z-10 flex justify-center h-screen w-full">
-            <div className="self-center flex flex-col">
-              <HeroLogo />
-              <motion.h3 
-                initial={{opacity:0}}
-                animate={{opacity:1}}
-                transition={{duration:1, delay:1}}
-                className="self-center text-gray-400 text-2xl text-center"
-              >
-                {heroContent}
-              </motion.h3>
-              <motion.div
-                animate={{opacity:1}}
-                initial={{opacity:0}}
-                transition={{duration:1, delay:1.25}}
-              >
-                <ScrollArrow destination="#section-2" destinationName="Introduction" />
-              </motion.div>
-            </div>
-            
-        </div>     
+          <div className="self-center flex flex-col">
+            <HeroLogo />
+            <motion.h3
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1 }}
+              className="self-center text-gray-400 text-2xl text-center"
+            >
+              {heroContent}
+            </motion.h3>
+            <motion.div
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{ duration: 1, delay: 1.25 }}
+            >
+              <ScrollArrow
+                destination="#section-2"
+                destinationName="Introduction"
+              />
+            </motion.div>
+          </div>
+        </div>
         <FullscreenImage>
-          <img src={heroImage} alt={heroImageAlt} className="object-fill object-center h-screen w-screen" />
+          <img
+            src={heroImage}
+            alt={heroImageAlt}
+            className="object-fill object-center h-screen w-screen"
+          />
         </FullscreenImage>
       </div>
     </HeroSection>
 
-    <a id="section-2"  aria-label={sectionTwoImageAlt}/>
+    <a id="section-2" aria-label={sectionTwoImageAlt} />
     <FullScreenSection
       bgImage={sectionTwoImage}
       imgAlt={sectionTwoImageAlt}
@@ -91,9 +93,11 @@ return (
       className="flex"
     >
       {sectionTwoText}
-      <ScrollArrow destination="#section-3" destinationName="About Hulse Dental" />  
+      <ScrollArrow
+        destination="#section-3"
+        destinationName="About Hulse Dental"
+      />
     </FullScreenSection>
-    
 
     <a id="section-3" aria-label={sectionTwoImageAlt} />
     <FullScreenSection
@@ -102,20 +106,26 @@ return (
       layoutType="fs-right"
     >
       {sectionThreeText}
-      <ScrollArrow destination="#section-4" destinationName="Hulse Dental Team & Services"/>  
+      <ScrollArrow
+        destination="#section-4"
+        destinationName="Hulse Dental Team & Services"
+      />
     </FullScreenSection>
-      
-    <a id="section-4" aria-label={sectionTwoImageAlt}></a>  
+
+    <a id="section-4" aria-label={sectionTwoImageAlt}></a>
     <FullScreenSection
       bgImage={sectionFourImage}
       imgAlt={sectionFourImageAlt}
       layoutType="fs-left"
     >
       {sectionFourText}
-      <ScrollArrow destination="#section-5" destinationName="Hulse Dental technologies and expertise"/> 
+      <ScrollArrow
+        destination="#section-5"
+        destinationName="Hulse Dental technologies and expertise"
+      />
     </FullScreenSection>
 
-    <a id="section-5" aria-label={sectionTwoImageAlt}></a>  
+    <a id="section-5" aria-label={sectionTwoImageAlt}></a>
     <FullScreenSection
       bgImage={sectionFiveImage}
       imgAlt={sectionFiveImageAlt}
@@ -123,17 +133,19 @@ return (
     >
       {sectionFiveText}
       <div>
-      <Link to="/services">
-        <button className="bg-gray-500 text-white py-4 px-8 text-base font-light m-8 hover:bg-gray-700">
-              Learn More About Our Services
-        </button>
-      </Link>
+        <Link to="/services">
+          <button className="bg-gray-500 text-white py-4 px-8 text-base font-light m-8 hover:bg-gray-700">
+            Learn More About Our Services
+          </button>
+        </Link>
       </div>
-    </FullScreenSection> 
-    <Reviews />
+    </FullScreenSection>
+    {/* 
+    <Reviews />            
+    */}
     <Payment />
   </Layout>
-  )
+)
 }
 
 export default IndexPage
