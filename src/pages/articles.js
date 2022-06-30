@@ -21,7 +21,7 @@ const News = () => {
       <div style={{minHeight:'80vh'}}>
        {/*<!-- BEGIN Vivial content widget -->*/}
           <div id="lvsc3a6e093d">
-          <script src="//cf.nearsay.com/static/widget_sc_js/lvsc3a6e093d" type="text/javascript"></script>
+          <script src="https://cf.nearsay.com/static/widget_sc_js/lvsc3a6e093d" type="text/javascript"></script>
           <div id="lvsc3a6e093d-outer">
           </div>
           </div>

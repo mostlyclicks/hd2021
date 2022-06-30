@@ -47,7 +47,9 @@ const ServicesPrismic = ({data}) => {
         <SEO title={seoTitle} description={seoDescription} />
         <Navbar transparent />
         <HeroLevel2 title={heroTitle} image={heroImage} minHeight="100vh" />
-        <Reviews />
+        {/* 
+        <Reviews />            
+        */}
 
         <a id="section-2"></a>
         <ContentTextPict image={sectionOneImage} alt={sectionOneImageAlt}>

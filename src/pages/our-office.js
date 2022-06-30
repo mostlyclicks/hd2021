@@ -50,61 +50,63 @@ const OurOffice = ({data}) => {
 
 
     return (
-        <Layout>
-        <SEO 
-            title={seoTitle}
-            description={seoDescription}
-         />
+      <Layout>
+        <SEO title={seoTitle} description={seoDescription} />
         <Navbar transparent />
-            <HeroLevel2 title={heroTitle} image={heroImage} minHeight="100vh">
-              
-              <p className=""><a href="#online-forms" className="text-gray-50 uppercase font-bold hover:text-indigo-400"><FaFileAlt className="text-5xl mb-4 text-white mx-auto my-8 hover:text-indigo-400" />Online Forms</a></p>
-            </HeroLevel2>
+        <HeroLevel2 title={heroTitle} image={heroImage} minHeight="100vh">
+          <p className="">
+            <a
+              href="#online-forms"
+              className="text-gray-50 uppercase font-bold hover:text-indigo-400"
+            >
+              <FaFileAlt className="text-5xl mb-4 text-white mx-auto my-8 hover:text-indigo-400" />
+              Online Forms
+            </a>
+          </p>
+        </HeroLevel2>
+             {/* 
+              <Reviews />            
+             */}
+        <a id="section-2"></a>
+        <FSTextBlock bgColor="bg-gray-600" textColor="p-light">
+          <h2 className="text-center mb-8 px-10">{textHeroTitle[0].text}</h2>
+          <RichText render={textHeroBody[0].text} />
+          <p>{textHeroBody[0].text}</p>
+          <p className="text-center">
+            <Link
+              to="/modal/covid/"
+              asModal
+              style={{
+                color: "#ffffff",
+                fontWeight: "bold",
+              }}
+            >
+              COVID-19 UPDATE
+            </Link>
+          </p>
+        </FSTextBlock>
 
-            <Reviews />            
-                
-            <a id="section-2"></a>
-            <FSTextBlock bgColor="bg-gray-600" textColor="p-light">
-                
-                <h2 className="text-center mb-8 px-10">{textHeroTitle[0].text}</h2>
-                <RichText render={textHeroBody[0].text} />
-                <p>{textHeroBody[0].text}</p>
-                <p className="text-center">
-                    <Link
-                        to="/modal/covid/"
-                        asModal
-                        style={{
-                        color: '#ffffff',
-                        fontWeight: 'bold',
-                        }}
-                    >
-                        COVID-19 UPDATE
-                    </Link>
-                </p>
-            </FSTextBlock>
+        <ContentTextPict image={sectionOneImg}>
+          <RichText render={sectionOneText} />
+        </ContentTextPict>
 
-            <ContentTextPict image={sectionOneImg}>
-                <RichText render={sectionOneText} />
-            </ContentTextPict>
+        <ContentTextPict image={sectionTwoImg} reversed positionOne>
+          <RichText render={sectionTwoText} />
+        </ContentTextPict>
 
-            <ContentTextPict image={sectionTwoImg} reversed positionOne>
-                <RichText render={sectionTwoText} />
-            </ContentTextPict>
+        <ContentTextPict image={sectionThreeImg}>
+          <h3 id="online-forms">{sectionThreeTitle}</h3>
+          <RichText render={sectionThreeText} />
+        </ContentTextPict>
 
-            <ContentTextPict image={sectionThreeImg}>
-                <h3 id="online-forms">{sectionThreeTitle}</h3>
-                <RichText render={sectionThreeText} />
-            </ContentTextPict>
+        <ContentTextPict image={sectionFourImg}>
+          <h3>{sectionFourTitle}</h3>
+          <RichText render={sectionFourText} />
+          <DentalForms />
+        </ContentTextPict>
 
-            <ContentTextPict image={sectionFourImg}>
-                <h3>{sectionFourTitle}</h3>
-                <RichText render={sectionFourText} />
-                <DentalForms />
-            </ContentTextPict>
-
-            <Payment />
-
-        </Layout>
+        <Payment />
+      </Layout>
     )
 }
 

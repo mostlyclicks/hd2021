@@ -38,7 +38,9 @@ const OurTeam = ({data}) => {
         className="bm-10"
       />
 
-      <Reviews />
+      {/* 
+      <Reviews />            
+      */}
 
       <section
         className="md:flex md:container md:flex-col lg:flex-row mx-auto p-dark border-t "
@@ -99,7 +101,6 @@ const OurTeam = ({data}) => {
             <p className="text-base lg:text-l text-gray-500">
               {RichText.render(zachCaseText)}
             </p>
-
           </div>
         </div>
       </section>
