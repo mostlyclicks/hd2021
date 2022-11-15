@@ -43,7 +43,7 @@ const FsContentRight = ({children, heroImage}) => {
           {/* mobile, sm */}  
           <div className="md:hidden">
             <div>
-                <img src={heroImage} alt="hero image" />
+                <img src={heroImage} alt="hero" />
             </div>
             <div className="p-light"
               style={{backgroundColor:"#1A294D"}}
@@ -57,8 +57,3 @@ const FsContentRight = ({children, heroImage}) => {
 
 export default FsContentRight
 
-{/* 
-// // md:flex text-black text-opacity-90 border-red-700
-// md:w-5/12 md:mr-0 
-// lg:w-6/12 relative bg-black opacity-80 lg:py-16
-// xl:w-3/12 */}
