@@ -1,7 +1,4 @@
 import React from 'react';
-import Helmet from 'react-helmet';
-
-import Layout from '../components/layout';
 
 export default class Payment extends React.Component {
 
@@ -35,7 +32,7 @@ render() {
       <div className="container m-auto py-4 w-full md:w-6/12 lg:w-4/12">
         <div className="text-center">
           <h2 className="text-2xl font-bold p-dark text-center">
-          <a href="https://heartlandpaymentservices.net/WebPayments/HulseDental/bills" target="_blank" className="btn btn-blue">Pay Your Bill Online</a></h2>  
+          <a href="https://heartlandpaymentservices.net/WebPayments/HulseDental/bills" target="_blank" rel="noreferrer" className="btn btn-blue">Pay Your Bill Online</a></h2>  
         </div>
       </div>
       </section>

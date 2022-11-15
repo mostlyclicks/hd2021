@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'gatsby-image'
-import Hero from "../components/hero"
 
 const HeroSection = ({children, image}) => {
 
