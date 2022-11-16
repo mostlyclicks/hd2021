@@ -45,7 +45,7 @@ const OurOffice = ({data}) => {
 
     const sectionFourTitle = document.body[5].primary.section_title.text
     const sectionFourText = document.body[5].primary.section_text.raw
-    const sectionFourImg = document.body[4].primary.image.url
+    const sectionFourImg = document.body[5].primary.image.url
     console.log(sectionOneTitle)
 
 
